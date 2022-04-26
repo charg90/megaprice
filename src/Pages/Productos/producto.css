@@ -1,0 +1,8 @@
+.producto-background {
+  background-image: url("./../../img/pattern3.png");
+}
+
+.text {
+  color: aliceblue;
+  font-family: "Permanent Marker", "Courier New", Courier, monospace;
+}
