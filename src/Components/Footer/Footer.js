@@ -10,7 +10,7 @@ const Footer = () => {
           md={4}
           lg={4}
           xl={4}
-          className="d-flex justify-content-center"
+          className="d-flex justify-content-center "
         >
           <p className="text-white">
             MegaPrice - Todos los derechos reservados

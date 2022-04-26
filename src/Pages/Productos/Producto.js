@@ -8,7 +8,7 @@ const Producto = ({ codigo, nombre, img, imgDescription }) => {
 
   return (
     <>
-      <Col className="mt-2 mb-2">
+      <Col sm={6} className="mt-2 mb-2">
         <Card style={{ width: "10rem" }} className="h-100 producto-background ">
           <Card.Img variant="top" src={img} />
           <Card.Body className="d-flex flex-column">
