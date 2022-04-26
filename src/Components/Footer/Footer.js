@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./footer.css";
 const Footer = () => {
   return (
-    <Container fluid className="footer ">
+    <Container fluid className="footer mt-auto ">
       <Row>
         <Col
           xs={12}
