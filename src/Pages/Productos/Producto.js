@@ -8,7 +8,13 @@ const Producto = ({ codigo, nombre, img, imgDescription }) => {
 
   return (
     <>
-      <Col sm={6} className="mt-2 mb-2">
+      <Col
+        xs={6}
+        sm={4}
+        md={4}
+        lg={3}
+        className="mt-2 mb-2 d-flex justify-content-center"
+      >
         <Card style={{ width: "10rem" }} className="h-100 producto-background ">
           <Card.Img variant="top" src={img} />
           <Card.Body className="d-flex flex-column">

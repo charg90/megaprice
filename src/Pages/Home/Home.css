@@ -7,3 +7,12 @@
 .container__letters {
   font-size: 1.5rem;
 }
+
+.producto-background {
+  background-image: url("./../../img/pattern3.png");
+}
+
+.text {
+  color: aliceblue;
+  font-family: "Permanent Marker", "Courier New", Courier, monospace;
+}
