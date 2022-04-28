@@ -3,7 +3,7 @@ import { db } from "./../Bd/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
 
 export const useGetProducts = () => {
-  const [productos, setProductos] = useState([]);
+  const [products, setProductos] = useState([]);
   const productosCollectionRef = collection(db, "productos");
 
   useEffect(() => {
@@ -21,5 +21,5 @@ export const useGetProducts = () => {
 
     getProductos();
   }, []);
-  return [productos, setProductos];
+  return [products, setProductos];
 };

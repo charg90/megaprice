@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Carousel,
-  Row,
-  Col,
-  Card,
-  Button,
-  CardGroup,
-} from "react-bootstrap";
+import { Container, Carousel, Row, Col, Card } from "react-bootstrap";
 import Pic1 from "./../../img/pexels-cottonbro-3661243.jpg";
 import Pic2 from "./../../img/pexels-markus-spiske-168866.jpg";
 import pic3 from "./../../img/pexels-mike-191360.jpg";
