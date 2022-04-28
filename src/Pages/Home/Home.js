@@ -72,42 +72,37 @@ const Home = () => {
           </Col>
         </Row>
         <Row className="d-flex justify-content-center mb-5">
-          <CardGroup>
-            <Card
-              style={{ width: "10rem" }}
-              className="mx-1 producto-background"
-            >
-              <Card.Img variant="top" src={monopatin} alt="no hay imagen" />
-              <Card.Body className="d-flex flex-column ">
-                <Card.Title className="text">Monopatin</Card.Title>
-                <Card.Text className="text mt-auto">
-                  Articulo : 112 nro.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+          <Card
+            style={{ width: "10rem" }}
+            className="mx-1  producto-background"
+          >
+            <Card.Img variant="top" src={monopatin} alt="no hay imagen" />
+            <Card.Body className="d-flex flex-column ">
+              <Card.Title className="text">Monopatin</Card.Title>
+              <Card.Text className="text mt-auto">
+                Articulo : 112 nro.
+              </Card.Text>
+            </Card.Body>
+          </Card>
 
-            <Card
-              style={{ width: "10rem" }}
-              className="mx-1 producto-background"
-            >
-              <Card.Img variant="top" src={cGigante} alt="no hay imagen" />
-              <Card.Body>
-                <Card.Title className="text">Camion Gigante</Card.Title>
-                <Card.Text className="text">Articulo : 112 nro</Card.Text>
-              </Card.Body>
-            </Card>
+          <Card style={{ width: "10rem" }} className="mx-1 producto-background">
+            <Card.Img variant="top" src={cGigante} alt="no hay imagen" />
+            <Card.Body>
+              <Card.Title className="text">Camion Gigante</Card.Title>
+              <Card.Text className="text">Articulo : 112 nro</Card.Text>
+            </Card.Body>
+          </Card>
 
-            <Card
-              style={{ width: "10rem" }}
-              className="mx-1 producto-background"
-            >
-              <Card.Img variant="top" src={escarabajo} alt="no hay imagen" />
-              <Card.Body>
-                <Card.Title className="text">Primer Escarabajo</Card.Title>
-                <Card.Text className="text">Articulo : 112 nro </Card.Text>
-              </Card.Body>
-            </Card>
-          </CardGroup>
+          <Card
+            style={{ width: "10rem" }}
+            className="mx-1 mt-1 producto-background"
+          >
+            <Card.Img variant="top" src={escarabajo} alt="no hay imagen" />
+            <Card.Body>
+              <Card.Title className="text">Primer Escarabajo</Card.Title>
+              <Card.Text className="text">Articulo : 112 nro </Card.Text>
+            </Card.Body>
+          </Card>
         </Row>
       </Container>
     </Container>
