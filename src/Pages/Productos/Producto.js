@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Card, Col, Image, Modal } from "react-bootstrap";
 import "./producto.css";
+
 const Producto = ({ codigo, nombre, img, imgDescription }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -21,7 +22,9 @@ const Producto = ({ codigo, nombre, img, imgDescription }) => {
             <Card.Title className="flex-grow-1 text-center text">
               {nombre.toUpperCase()}
             </Card.Title>
-            <Card.Title className="mt-auto text ">Codigo:{codigo}</Card.Title>
+            <Card.Title className="mt-auto text flex-grow-1 ">
+              Codigo:{codigo}
+            </Card.Title>
             <Button
               variant="primary"
               className="mt-auto"
