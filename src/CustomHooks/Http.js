@@ -10,7 +10,6 @@ export const useGetProducts = () => {
   useEffect(() => {
     const getProductos = async () => {
       try {
-        console.log(loading);
         const data = await getDocs(productosCollectionRef);
         const product = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
         product.sort((a, b) => parseInt(a.codigo) - parseInt(b.codigo));

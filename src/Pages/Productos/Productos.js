@@ -14,6 +14,7 @@ const Productos = () => {
   };
 
   useEffect(() => {
+    console.log(process.env.REACT_APP_API_KEY);
     setFilter(products);
   }, [products]);
 
