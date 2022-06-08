@@ -3,6 +3,8 @@ import { Container, Row, Button, Col } from "react-bootstrap";
 import { buttons } from "./../../Components/Buttons/Buttons";
 import Producto from "./Producto";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
 import Spinners from "./../../Components/Spinners/Spinners";
 const Productos = () => {
   const [products, loading] = useGetProducts();
@@ -19,7 +21,11 @@ const Productos = () => {
   }, [products]);
 
   return (
-    <>
+    <motion.div
+      intial={{ width: 0 }}
+      animated={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+    >
       <Container>
         <h1 className="text-center mt-3"> Nuestros Jueguetes</h1>
         <Row>
@@ -49,7 +55,7 @@ const Productos = () => {
           </Row>
         )}
       </Container>
-    </>
+    </motion.div>
   );
 };
 
