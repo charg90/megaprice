@@ -34,8 +34,8 @@ const NavBar = () => {
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/novedades" className="navBarText">
-                Novedades
+              <Link to="/contacto" className="navBarText">
+                Contacto
               </Link>
             </Nav.Link>
           </Nav>

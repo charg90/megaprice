@@ -1,0 +1,81 @@
+body {
+  background-color: #e8e8e8;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23003d8f' fill-opacity='0.1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+/* navbar styles */
+
+.navBar {
+  background-image: url("./img/pattern3.png");
+}
+
+.navBarText {
+  font-family: "Permanent Marker", "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+}
+.navBarText:hover {
+  color: red !important;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+}
+
+/* carrousel styles */
+.carouselImg {
+  height: 50vh;
+}
+
+/*Info styles */
+.container__info {
+  background-color: #003d8f;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+.container__letters {
+  font-size: 1.5rem;
+}
+
+/* Cards */
+
+.card__Container {
+  font-family: "Permanent Marker", "Courier New", Courier, monospace;
+  background-image: url("./img/pattern3.png");
+  width: 18rem;
+  height: 30rem;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.card__Container:hover {
+  -webkit-box-shadow: 7px 7px 20px 10px rgba(0, 0, 0, 0.57);
+  box-shadow: 7px 7px 20px 10px rgba(0, 0, 0, 0.57);
+}
+
+/* footer */
+
+.footer__container {
+  background-color: #003d8f;
+}
+
+/* jumbotron  */
+
+.jumbotron_container {
+  background-color: #003d8f !important;
+}
+
+.jumbotron_letters {
+  font-size: 20px;
+}
+
+/* Productos Card */
+
+.productos_card {
+  width: 12rem;
+  height: 25rem;
+  font-family: "Permanent Marker", "Courier New", Courier, monospace;
+  background-image: url("./img/pattern3.png");
+
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}

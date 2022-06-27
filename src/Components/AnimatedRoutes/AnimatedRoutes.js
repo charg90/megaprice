@@ -4,6 +4,7 @@ import Home from "../../Pages/Home/Home";
 import { Empresa } from "../../Pages/Empresa/Empresa";
 import Productos from "../../Pages/Productos/Productos";
 import { AnimatePresence } from "framer-motion";
+import Contact from "../../Pages/Contact/Contact";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -13,6 +14,7 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="empresa" element={<Empresa />} />
         <Route path="productos" element={<Productos />} />
+        <Route path="contacto" element={<Contact />} />
       </Routes>
     </AnimatePresence>
   );
