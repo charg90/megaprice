@@ -8,11 +8,6 @@ import Swal from "sweetalert2";
 import "./contact.css";
 
 const Contact = () => {
-  const {
-    register,
-    formState: { errors },
-  } = useForm();
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -42,9 +37,12 @@ const Contact = () => {
     >
       <Container>
         <Row className=" d-flex justify-content-center mb-2 ">
-          <h1 className="  mt-3"> Nos encantaria estar en contacto con vos</h1>
+          <h1 className="  mt-3 text-center">
+            {" "}
+            Nos encantaria estar en contacto con vos
+          </h1>
 
-          <Col xs={6} md={6} lg={6} className=" mt-4 ">
+          <Col xs={12} md={6} lg={6} className=" mt-4 ">
             <Form onSubmit={sendEmail} className="form_contact p-4 ">
               <Form.Group>
                 <Form.Label> Nombre y Apellido</Form.Label>
@@ -52,63 +50,29 @@ const Contact = () => {
                   type="text"
                   placeholder="Nombre y Apellido"
                   name="nombreApellido"
-                  {...register("nombreApellido", {
-                    required: true,
-                    maxLength: 20,
-                  })}
                 />
-                {errors.nombreApellido?.type === "required" && (
-                  <p>nombre requerido</p>
-                )}
               </Form.Group>
               <Form.Label> Empresa:</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Empresa"
-                name="empresa"
-                {...register("empresa")}
-              />
+              <Form.Control type="text" placeholder="Empresa" name="empresa" />
               <Form.Label> Email:</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="email"
-                name="email"
-                {...register("email")}
-              />
+              <Form.Control type="email" placeholder="email" name="email" />
               <Form.Label> Pais:</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Pais"
-                name="pais"
-                {...register("pais")}
-              />
+              <Form.Control type="text" placeholder="Pais" name="pais" />
               <Form.Label> Ciudad:</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Ciudad"
-                name="ciudad"
-                {...register("ciudad")}
-              />
+              <Form.Control type="text" placeholder="Ciudad" name="ciudad" />
               <Form.Label> telefono/celular:</Form.Label>
               <Form.Control
                 type="number"
                 placeholder="Telefono/Celular"
                 name="tel"
-                {...register("tel")}
               />
               <Form.Label> Motivo:</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Motivo"
-                name="motivo"
-                {...register("motivo")}
-              />
+              <Form.Control type="text" placeholder="Motivo" name="motivo" />
               <Form.Control
                 as="textarea"
                 rows={3}
                 className="my-1"
                 name="comment"
-                {...register("comentario")}
               />
               <Button type="submit" className="btn btn-block">
                 ENVIAR
