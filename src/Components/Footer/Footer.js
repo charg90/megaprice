@@ -7,9 +7,9 @@ const Footer = () => {
       <Row>
         <Col
           xs={12}
-          md={4}
-          lg={4}
-          xl={4}
+          md={6}
+          lg={6}
+          xl={6}
           className="d-flex justify-content-center "
         >
           <p className="text-white">
@@ -18,21 +18,13 @@ const Footer = () => {
         </Col>
         <Col
           xs={12}
-          md={4}
-          lg={4}
-          xl={4}
+          md={6}
+          lg={6}
+          xl={6}
           className="d-flex justify-content-center"
         >
-          <p className="text-white">Tel.: (5411) 4713-5577 / 4753-4105 </p>
-        </Col>
-        <Col
-          xs={12}
-          md={4}
-          lg={4}
-          xl={4}
-          className="d-flex justify-content-center"
-        >
-          <p className="text-white">info@megaprice.com.ar</p>
+          <p className="text-white">Tel.: (5411) 4753-4105 </p>
+          <p className="text-white inline-block">/ lineas rotativas</p>
         </Col>
       </Row>
     </Container>

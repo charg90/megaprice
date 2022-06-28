@@ -15,4 +15,8 @@ export const buttons = [
     id: 4,
     value: "infantil",
   },
+  {
+    id: 5,
+    value: "didácticos",
+  },
 ];

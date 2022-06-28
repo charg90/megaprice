@@ -45,19 +45,13 @@ const Home = () => {
         </Carousel>
         <Container className="  mt-5 container__info d-flex justify-content-center align-items-center rounded my-5 ">
           <Row>
-            <Col xs={4} md={4} lg={4} className="d-flex align-items-center ">
-              <i className="fa-solid fa-building-columns fa-2xl  text-white text-center" />
-              <p className="m-0 text-white  text-center">
-                Todos los medios de pagos
-              </p>
-            </Col>
-            <Col xs={4} md={4} lg={4} className="d-flex align-items-center ">
+            <Col xs={6} md={6} lg={66} className="d-flex align-items-center ">
               <i class="fa-solid fa-truck-fast fa-2xl  text-white"></i>
               <p class="text-white text-center m-0">
                 Envios a toda la Argentina
               </p>
             </Col>
-            <Col xs={4} md={4} lg={4} className="d-flex align-items-center">
+            <Col xs={6} md={6} lg={6} className="d-flex align-items-center">
               <i class="fa-solid fa-certificate fa-2xl   text-white "></i>
               <p class="text-white text-center  m-0">
                 Productos Certificados IRAM

@@ -16,7 +16,6 @@ const Productos = () => {
   };
 
   useEffect(() => {
-    console.log(process.env.REACT_APP_API_KEY);
     setFilter(products);
   }, [products]);
 
@@ -27,7 +26,7 @@ const Productos = () => {
       exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
     >
       <Container>
-        <h1 className="text-center mt-3"> Nuestros Jueguetes</h1>
+        <h1 className="text-center mt-3"> A Jugar !!!</h1>
         <Row>
           <Col className="d-flex justify-content-center ">
             {buttons &&
