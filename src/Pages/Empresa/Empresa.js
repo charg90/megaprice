@@ -2,7 +2,8 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import "./empresa.css";
-export const Empresa = () => {
+
+const Empresa = () => {
   return (
     <motion.div
       intial={{ width: 0 }}
@@ -63,3 +64,5 @@ export const Empresa = () => {
     </motion.div>
   );
 };
+
+export default Empresa;
