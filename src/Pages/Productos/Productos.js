@@ -38,7 +38,7 @@ const Productos = () => {
           />
         </Helmet>
         <h1 className="text-center mt-3"> A Jugar !!!</h1>
-        <Row className="d-flex justify-content-center">
+        <Row className="d-flex ">
           {buttons &&
             buttons.map((button) => (
               <Col className=" d-flex justify-content-center">

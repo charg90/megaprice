@@ -2,10 +2,10 @@ import React, { lazy } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { Suspense } from "react";
+import Productos from "../../Pages/Productos/Productos";
 import Spinners from "../Spinners/Spinners";
 const Home = lazy(() => import("../../Pages/Home/Home"));
 const Empresa = lazy(() => import("../../Pages/Empresa/Empresa"));
-const Productos = lazy(() => import("../../Pages/Productos/Productos"));
 const Contact = lazy(() => import("../../Pages/Contact/Contact"));
 
 const AnimatedRoutes = () => {
