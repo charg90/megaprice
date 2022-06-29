@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Carousel, Row, Col, Card } from "react-bootstrap";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import Pic1 from "./../../img/pexels-cottonbro-3661243.jpg";
 import Pic2 from "./../../img/pexels-markus-spiske-168866.jpg";
 import pic3 from "./../../img/pexels-mike-191360.jpg";
@@ -15,6 +16,17 @@ const Home = () => {
       animated={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
     >
+      <Helmet>
+        <title>MegaPrice | Home</title>
+        <meta
+          name="description"
+          content="Megaprice es una empresa orientada a la producción de distintas líneas de juguetes plásticos para la Primera Infancia, dentro de estándares elevados de calidad y a un precio accesible para el consumidor final."
+        />
+        <meta
+          name="keywords"
+          content="juguetes, juguetes de plástico, autos plásticos, primera infancia, juguetes pequeños, juguetes para encastrar, duraderos, seguros, playa, infantil, didáctico, little, nenes, nenas, bañera, playa."
+        />
+      </Helmet>
       <Container fluid className="p-0 ">
         <Carousel>
           <Carousel.Item interval={2500}>

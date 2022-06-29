@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button, Card, Col, Image, Modal } from "react-bootstrap";
-import { motion } from "framer-motion";
+
 import "./producto.css";
 
 const Producto = ({ codigo, nombre, img, imgDescription }) => {

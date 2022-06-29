@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import "./empresa.css";
 
 const Empresa = () => {
@@ -10,6 +11,17 @@ const Empresa = () => {
       animated={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
     >
+      <Helmet>
+        <title>MegaPrice | Empresa</title>
+        <meta
+          name="description"
+          content="Megaprice es una empresa orientada a la producción de distintas líneas de juguetes plásticos para la Primera Infancia, dentro de estándares elevados de calidad y a un precio accesible para el consumidor final."
+        />
+        <meta
+          name="keywords"
+          content="juguetes, juguetes de plástico, autos plásticos, primera infancia, juguetes pequeños, juguetes para encastrar, duraderos, seguros, playa, infantil, didáctico, little, nenes, nenas, bañera, playa."
+        />
+      </Helmet>
       <Container className="   my-5  ">
         <Row className=" p-3 jumbotron_container  ">
           <Col sm={12}>

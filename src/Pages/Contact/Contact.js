@@ -1,40 +1,28 @@
 import React from "react";
-import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
-import Swal from "sweetalert2";
-
+import sendEmail from "../../Services/EmailJs";
+import { Helmet } from "react-helmet";
 import "./contact.css";
 
 const Contact = () => {
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_8nnq1ai",
-        "template_nnr9cnq",
-        e.target,
-        "n4WX9Oyn3Wg_n7Fqh"
-      )
-      .then((response) => {
-        console.log(response);
-        Swal.fire({
-          position: "top-end",
-          icon: "success",
-          title: "Su mensaje ha sido enviado exitosamente",
-          showConfirmButton: false,
-          timer: 1500,
-        });
-      })
-      .catch((error) => console.log(error));
-  };
   return (
     <motion.div
       intial={{ width: 0 }}
       animated={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
     >
+      <Helmet>
+        <title>MegaPrice | Contacto</title>
+        <meta
+          name="description"
+          content="Megaprice es una empresa orientada a la producción de distintas líneas de juguetes plásticos para la Primera Infancia, dentro de estándares elevados de calidad y a un precio accesible para el consumidor final."
+        />
+        <meta
+          name="keywords"
+          content="juguetes, juguetes de plástico, autos plásticos, primera infancia, juguetes pequeños, juguetes para encastrar, duraderos, seguros, playa, infantil, didáctico, little, nenes, nenas, bañera, playa."
+        />
+      </Helmet>
       <Container>
         <Row className=" d-flex justify-content-center mb-2 ">
           <h1 className="  mt-3 text-center">
@@ -50,30 +38,68 @@ const Contact = () => {
                   type="text"
                   placeholder="Nombre y Apellido"
                   name="nombreApellido"
+                  autofocus
+                  required
                 />
               </Form.Group>
-              <Form.Label> Empresa:</Form.Label>
-              <Form.Control type="text" placeholder="Empresa" name="empresa" />
-              <Form.Label> Email:</Form.Label>
-              <Form.Control type="email" placeholder="email" name="email" />
-              <Form.Label> Pais:</Form.Label>
-              <Form.Control type="text" placeholder="Pais" name="pais" />
-              <Form.Label> Ciudad:</Form.Label>
-              <Form.Control type="text" placeholder="Ciudad" name="ciudad" />
+              <Form.Group>
+                <Form.Label> Empresa:</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Empresa"
+                  name="empresa"
+                  required
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Label> Email:</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="email"
+                  name="email"
+                  required
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Label> Pais:</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Pais"
+                  name="pais"
+                  required
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Label> Ciudad:</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Ciudad"
+                  name="ciudad"
+                  required
+                />
+              </Form.Group>
               <Form.Label> telefono/celular:</Form.Label>
               <Form.Control
                 type="number"
                 placeholder="Telefono/Celular"
                 name="tel"
+                required
               />
-              <Form.Label> Motivo:</Form.Label>
-              <Form.Control type="text" placeholder="Motivo" name="motivo" />
-              <Form.Control
-                as="textarea"
-                rows={3}
-                className="my-1"
-                name="comment"
-              />
+              <Form.Group>
+                <Form.Label> Motivo:</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Motivo"
+                  name="motivo"
+                  required
+                />
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  className="my-1"
+                  name="comment"
+                />
+              </Form.Group>
               <Button type="submit" className="btn btn-block">
                 ENVIAR
               </Button>

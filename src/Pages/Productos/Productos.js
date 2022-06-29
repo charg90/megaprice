@@ -4,7 +4,7 @@ import { buttons } from "./../../Components/Buttons/Buttons";
 import Producto from "./Producto";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
+import { Helmet } from "react-helmet";
 import Spinners from "./../../Components/Spinners/Spinners";
 const Productos = () => {
   const [products, loading] = useGetProducts();
@@ -26,6 +26,17 @@ const Productos = () => {
       exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
     >
       <Container>
+        <Helmet>
+          <title>MegaPrice | Productos</title>
+          <meta
+            name="description"
+            content="Megaprice es una empresa orientada a la producción de distintas líneas de juguetes plásticos para la Primera Infancia, dentro de estándares elevados de calidad y a un precio accesible para el consumidor final."
+          />
+          <meta
+            name="keywords"
+            content="juguetes, juguetes de plástico, autos plásticos, primera infancia, juguetes pequeños, juguetes para encastrar, duraderos, seguros, playa, infantil, didáctico, little, nenes, nenas, bañera, playa."
+          />
+        </Helmet>
         <h1 className="text-center mt-3"> A Jugar !!!</h1>
         <Row>
           <Col className="d-flex justify-content-center ">
