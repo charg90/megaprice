@@ -38,23 +38,22 @@ const Productos = () => {
           />
         </Helmet>
         <h1 className="text-center mt-3"> A Jugar !!!</h1>
-        <Row>
-          <Col className="d-flex justify-content-center ">
-            {buttons &&
-              buttons.map((button) => (
-                <>
-                  <Button
-                    key={button.id}
-                    as="input"
-                    type="button"
-                    value={button.value}
-                    onClick={(e) => handlerFilter(e)}
-                    className="mx-1 mt-3 buttons"
-                  />
-                </>
-              ))}
-          </Col>
+        <Row className="d-flex justify-content-center">
+          {buttons &&
+            buttons.map((button) => (
+              <Col className=" d-flex justify-content-center">
+                <Button
+                  key={button.id}
+                  as="input"
+                  type="button"
+                  value={button.value}
+                  onClick={(e) => handlerFilter(e)}
+                  className="mx-1 mt-3 buttons"
+                />
+              </Col>
+            ))}
         </Row>
+
         {loading ? (
           <Spinners />
         ) : (
