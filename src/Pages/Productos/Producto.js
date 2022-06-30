@@ -12,18 +12,18 @@ const Producto = ({ codigo, nombre, img, imgDescription }) => {
     <>
       <Col
         xs={6}
-        sm={4}
+        sm={6}
         md={4}
         lg={3}
         className="mt-2 mb-2 d-flex justify-content-center"
       >
-        <Card style={{ width: "10rem" }} className="h-100 producto-background ">
+        <Card style={{ width: "14rem" }} className="h-100 producto-background ">
           <Card.Img variant="top" src={img} />
           <Card.Body className="d-flex flex-column">
             <Card.Title className="flex-grow-1 text-center text">
               {nombre.toUpperCase()}
             </Card.Title>
-            <Card.Title className="mt-auto text flex-grow-1 ">
+            <Card.Title className="mt-auto text flex-grow-1 text-center ">
               Codigo:{codigo}
             </Card.Title>
             <Button

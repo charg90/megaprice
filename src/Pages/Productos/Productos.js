@@ -1,18 +1,24 @@
+import { useEffect, useState } from "react";
 import { useGetProducts } from "../../CustomHooks/Http";
 import { Container, Row, Button, Col } from "react-bootstrap";
 import { buttons } from "./../../Components/Buttons/Buttons";
 import Producto from "./Producto";
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import Spinners from "./../../Components/Spinners/Spinners";
+
 const Productos = () => {
   const [products, loading] = useGetProducts();
   const [filter, setFilter] = useState(products);
+  const [info] = useState(buttons);
+  const [message, setMessage] = useState("");
+
   const handlerFilter = (e) => {
     const categoria = e.target.value;
     const productsFilter = products.filter((p) => p.categoria === categoria);
+    const [infoFilter] = info.filter((e) => e.value === categoria);
     setFilter(productsFilter);
+    setMessage(infoFilter.description);
   };
 
   useEffect(() => {
@@ -52,8 +58,8 @@ const Productos = () => {
                 />
               </Col>
             ))}
+          {<p>{message}</p>}
         </Row>
-
         {loading ? (
           <Spinners />
         ) : (

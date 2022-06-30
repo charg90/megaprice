@@ -27,7 +27,7 @@ const Contact = () => {
         <Row className=" d-flex justify-content-center mb-2 ">
           <h1 className="  mt-3 text-center">
             {" "}
-            Nos encantaria estar en contacto con vos
+            Nos encanta estar en contacto con vos
           </h1>
 
           <Col xs={12} md={6} lg={6} className=" mt-4 ">
