@@ -6,6 +6,7 @@ import Producto from "./Producto";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import Spinners from "./../../Components/Spinners/Spinners";
+import "./producto.css";
 
 const Productos = () => {
   const [products, loading] = useGetProducts();
@@ -44,10 +45,21 @@ const Productos = () => {
           />
         </Helmet>
         <h1 className="text-center mt-3"> A Jugar !!!</h1>
-        <Row className="d-flex ">
+        <Row>
+          <Col>
+            <p className="text-center message p-2 mt-3">
+              El juego es una parte fundamental de la vida de los bebes, niñas y
+              niños ya que,gracias a el, mejoran su capacidad de aprendizaje
+              motivados por su curiosidad, como asi tambien tiene la capacidad
+              de reunir a los adultos y al niños/niñas en interacciones
+              divertidas y llenas de amor.{" "}
+            </p>
+          </Col>
+        </Row>
+        <Row className="d-flex justify-content-center   ">
           {buttons &&
             buttons.map((button) => (
-              <Col className=" d-flex justify-content-center">
+              <Col className=" d-flex justify-content-center ">
                 <Button
                   key={button.id}
                   as="input"
@@ -58,7 +70,18 @@ const Productos = () => {
                 />
               </Col>
             ))}
-          {<p>{message}</p>}
+        </Row>
+        <Row
+          className={
+            message !== "" &&
+            "message d-flex justify-content-center align-items-center mt-2 p-2 mt-3"
+          }
+        >
+          {
+            <Col>
+              <p className="my-0 text-center">{message}</p>
+            </Col>
+          }
         </Row>
         {loading ? (
           <Spinners />

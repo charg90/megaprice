@@ -10,3 +10,10 @@
 .buttons {
   background-color: #003d8f;
 }
+
+.message {
+  background-color: #003d8f;
+  font-family: "Arial", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 6px;
+  color: aliceblue;
+}

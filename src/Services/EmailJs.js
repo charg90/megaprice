@@ -5,7 +5,7 @@ const sendEmail = (e) => {
   e.preventDefault();
   emailjs
     .sendForm(
-      "service_8nnq1ai",
+      "service_fq6x04p",
       "template_nnr9cnq",
       e.target,
       "n4WX9Oyn3Wg_n7Fqh"
