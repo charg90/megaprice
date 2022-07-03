@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, Carousel, Row, Col, Card } from "react-bootstrap";
+import { Container, Carousel, Row, Col, Card, Image } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import fondo from "./../../img/animals.jpg";
 import Pic1 from "./../../img/pexels-cottonbro-3661243.jpg";
 import Pic2 from "./../../img/pexels-markus-spiske-168866.jpg";
 import pic3 from "./../../img/pexels-mike-191360.jpg";
@@ -27,8 +28,23 @@ const Home = () => {
           content="juguetes, juguetes de plástico, autos plásticos, primera infancia, juguetes pequeños, juguetes para encastrar, duraderos, seguros, playa, infantil, didáctico, little, nenes, nenas, bañera, playa."
         />
       </Helmet>
-      <Container fluid className="p-0 ">
-        <Carousel>
+
+      <Container
+        fluid
+        className=" p-0 image vh-100 d-flex justify-content-center align-items-center  "
+      >
+        <p className="  text-center text ">
+          Megaprice le ofrece una amplia gama de productos innovadores en
+          juguetes plásticos para la primera infancia, desarrollados bajo
+          estrictos estándares de calidad y seguridad. Entre la gran variedad de
+          juguetes ofrecemos distintos tipos de vehículos plásticos, como autos,
+          camiones, aviones, barcos, trenes, etc; toda una línea de Juegos
+          Didácticos pensados para el desarrollo y motivación de los más
+          pequeños. Año tras año, nuestras líneas de juguetes son complementadas
+          con nuevos modelos, manteniendo siempre presente el factor económico
+          del mercado y brindándoles a nuestros clientes la mejor atención.
+        </p>
+        {/* <Carousel>
           <Carousel.Item interval={2500}>
             <img
               className="d-block w-100 "
@@ -54,8 +70,8 @@ const Home = () => {
               style={{ height: "20rem" }}
             />
           </Carousel.Item>
-        </Carousel>
-        <Container className="  mt-5 container__info d-flex justify-content-center align-items-center rounded my-5 ">
+        </Carousel> */}
+        {/* <Container className="  mt-5 container__info d-flex justify-content-center align-items-center rounded my-5 ">
           <Row>
             <Col xs={6} md={6} lg={66} className="d-flex align-items-center ">
               <i class="fa-solid fa-truck-fast fa-2xl  text-white"></i>
@@ -70,14 +86,14 @@ const Home = () => {
               </p>
             </Col>
           </Row>
-        </Container>
-        <Container>
+        </Container> */}
+        {/* <Container>
           <Row>
             <Col>
               <h1 className="text-center">Los mas vendidos</h1>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-center mb-5">
+          <Row className="d-flex justify-content-center ">
             <Card
               style={{ width: "10rem" }}
               className="mx-1  producto-background"
@@ -113,7 +129,7 @@ const Home = () => {
               </Card.Body>
             </Card>
           </Row>
-        </Container>
+        </Container> */}
       </Container>
     </motion.div>
   );

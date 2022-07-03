@@ -8,11 +8,15 @@
   font-size: 1.5rem;
 }
 
-.producto-background {
-  background-image: url("./../../img/pattern3.png");
+.text {
+  color: ;
+  font-family: "Permanent Marker", "Courier New", Courier, monospace;
 }
 
-.text {
-  color: aliceblue;
-  font-family: "Permanent Marker", "Courier New", Courier, monospace;
+.image {
+  background-image: url("https://img.freepik.com/free-vector/many-cute-animals-bamboo-forest_1308-32851.jpg?w=2000");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
