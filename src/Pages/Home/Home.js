@@ -31,9 +31,16 @@ const Home = () => {
 
       <Container
         fluid
-        className=" p-0 image vh-100 d-flex justify-content-center align-items-center  "
+        className=" p-0    justify-content-center align-items-center   "
       >
-        <p className="  text-center text ">
+        <img
+          className="d-block w-100 img-responsive "
+          src="https://img.freepik.com/free-vector/many-cute-animals-bamboo-forest_1308-32851.jpg?w=2000"
+          alt="First slide"
+          style={{ height: "42rem" }}
+          fluid
+        ></img>
+        <p className="  text-center text carousel-caption ">
           Megaprice le ofrece una amplia gama de productos innovadores en
           juguetes plásticos para la primera infancia, desarrollados bajo
           estrictos estándares de calidad y seguridad. Entre la gran variedad de
@@ -44,7 +51,8 @@ const Home = () => {
           con nuevos modelos, manteniendo siempre presente el factor económico
           del mercado y brindándoles a nuestros clientes la mejor atención.
         </p>
-        {/* <Carousel>
+      </Container>
+      {/* <Carousel>
           <Carousel.Item interval={2500}>
             <img
               className="d-block w-100 "
@@ -71,7 +79,7 @@ const Home = () => {
             />
           </Carousel.Item>
         </Carousel> */}
-        {/* <Container className="  mt-5 container__info d-flex justify-content-center align-items-center rounded my-5 ">
+      {/* <Container className="  mt-5 container__info d-flex justify-content-center align-items-center rounded my-5 ">
           <Row>
             <Col xs={6} md={6} lg={66} className="d-flex align-items-center ">
               <i class="fa-solid fa-truck-fast fa-2xl  text-white"></i>
@@ -87,7 +95,7 @@ const Home = () => {
             </Col>
           </Row>
         </Container> */}
-        {/* <Container>
+      {/* <Container>
           <Row>
             <Col>
               <h1 className="text-center">Los mas vendidos</h1>
@@ -130,7 +138,6 @@ const Home = () => {
             </Card>
           </Row>
         </Container> */}
-      </Container>
     </motion.div>
   );
 };
