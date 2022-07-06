@@ -33,24 +33,27 @@ const Home = () => {
         fluid
         className=" p-0    justify-content-center align-items-center   "
       >
-        <img
-          className="d-block w-100 img-responsive "
-          src="https://img.freepik.com/free-vector/many-cute-animals-bamboo-forest_1308-32851.jpg?w=2000"
-          alt="First slide"
-          style={{ height: "42rem" }}
-          fluid
-        ></img>
-        <p className="  text-center text carousel-caption ">
-          Megaprice le ofrece una amplia gama de productos innovadores en
-          juguetes plásticos para la primera infancia, desarrollados bajo
-          estrictos estándares de calidad y seguridad. Entre la gran variedad de
-          juguetes ofrecemos distintos tipos de vehículos plásticos, como autos,
-          camiones, aviones, barcos, trenes, etc; toda una línea de Juegos
-          Didácticos pensados para el desarrollo y motivación de los más
-          pequeños. Año tras año, nuestras líneas de juguetes son complementadas
-          con nuevos modelos, manteniendo siempre presente el factor económico
-          del mercado y brindándoles a nuestros clientes la mejor atención.
-        </p>
+        <div className="d-flex ">
+          <img
+            className=" w-100 img-responsive  "
+            src="https://img.freepik.com/free-vector/many-cute-animals-bamboo-forest_1308-32851.jpg?w=2000"
+            alt="First slide"
+            style={{ height: "48rem" }}
+            fluid
+          />
+          <p className="  text-center text carousel-caption words home_text ">
+            Megaprice le ofrece una amplia gama de productos innovadores en
+            juguetes plásticos para la primera infancia, desarrollados bajo
+            estrictos estándares de calidad y seguridad. Entre la gran variedad
+            de juguetes ofrecemos distintos tipos de vehículos plásticos, como
+            autos, camiones, aviones, barcos, trenes, etc; toda una línea de
+            Juegos Didácticos pensados para el desarrollo y motivación de los
+            más pequeños. Año tras año, nuestras líneas de juguetes son
+            complementadas con nuevos modelos, manteniendo siempre presente el
+            factor económico del mercado y brindándoles a nuestros clientes la
+            mejor atención.
+          </p>
+        </div>
       </Container>
       {/* <Carousel>
           <Carousel.Item interval={2500}>

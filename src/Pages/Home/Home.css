@@ -12,7 +12,13 @@
   color: white;
   font-family: "Permanent Marker", "Courier New", Courier, monospace;
 }
-.carousel-caption {
+.image {
+  position: relative;
+}
+.home_text {
+  top: 55%;
+  transform: translateY(-50%);
+  color: #003d8f;
 }
 /* .image {
   background-image: url("https://img.freepik.com/free-vector/many-cute-animals-bamboo-forest_1308-32851.jpg?w=2000");
