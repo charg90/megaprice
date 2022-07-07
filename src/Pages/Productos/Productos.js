@@ -32,65 +32,67 @@ const Productos = () => {
       animated={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
     >
+      <Helmet>
+        <title>MegaPrice | Productos</title>
+        <meta
+          name="description"
+          content="Megaprice es una empresa orientada a la producción de distintas líneas de juguetes plásticos para la Primera Infancia, dentro de estándares elevados de calidad y a un precio accesible para el consumidor final."
+        />
+        <meta
+          name="keywords"
+          content="juguetes, juguetes de plástico, autos plásticos, primera infancia, juguetes pequeños, juguetes para encastrar, duraderos, seguros, playa, infantil, didáctico, little, nenes, nenas, bañera, playa."
+        />
+      </Helmet>
       <Container>
-        <Helmet>
-          <title>MegaPrice | Productos</title>
-          <meta
-            name="description"
-            content="Megaprice es una empresa orientada a la producción de distintas líneas de juguetes plásticos para la Primera Infancia, dentro de estándares elevados de calidad y a un precio accesible para el consumidor final."
-          />
-          <meta
-            name="keywords"
-            content="juguetes, juguetes de plástico, autos plásticos, primera infancia, juguetes pequeños, juguetes para encastrar, duraderos, seguros, playa, infantil, didáctico, little, nenes, nenas, bañera, playa."
-          />
-        </Helmet>
-        <h1 className="text-center mt-3"> A Jugar !!!</h1>
-        <Row>
-          <Col>
-            <p className="text-center message p-2 mt-3">
-              El juego es una parte fundamental de la vida de los bebes, niñas y
-              niños ya que,gracias a el, mejoran su capacidad de aprendizaje
-              motivados por su curiosidad, como asi tambien tiene la capacidad
-              de reunir a los adultos y al niños/niñas en interacciones
-              divertidas y llenas de amor.{" "}
-            </p>
-          </Col>
-        </Row>
-        <Row className="d-flex justify-content-center   ">
-          {buttons &&
-            buttons.map((button) => (
-              <Col className=" d-flex justify-content-center ">
-                <Button
-                  key={button.id}
-                  as="input"
-                  type="button"
-                  value={button.value}
-                  onClick={(e) => handlerFilter(e)}
-                  className="mx-1 mt-3 buttons"
-                />
-              </Col>
-            ))}
-        </Row>
-        <Row
-          className={
-            message !== "" &&
-            "message d-flex justify-content-center align-items-center mt-2 p-2 mt-3"
-          }
-        >
-          {
-            <Col>
-              <p className="my-0 text-center">{message}</p>
-            </Col>
-          }
-        </Row>
         {loading ? (
           <Spinners />
         ) : (
-          <Row className="mt-3">
-            {filter.map((p) => (
-              <Producto key={p.id} {...p} />
-            ))}
-          </Row>
+          <>
+            <h1 className="text-center mt-3"> A Jugar !!!</h1>
+            <Row>
+              <Col>
+                <p className="text-center message p-2 mt-3">
+                  El juego es una parte fundamental de la vida de los bebes,
+                  niñas y niños ya que,gracias a el, mejoran su capacidad de
+                  aprendizaje motivados por su curiosidad, como asi tambien
+                  tiene la capacidad de reunir a los adultos y al niños/niñas en
+                  interacciones divertidas y llenas de amor.{" "}
+                </p>
+              </Col>
+            </Row>
+            <Row className="d-flex justify-content-center   ">
+              {buttons &&
+                buttons.map((button) => (
+                  <Col className=" d-flex justify-content-center ">
+                    <Button
+                      key={button.id}
+                      as="input"
+                      type="button"
+                      value={button.value}
+                      onClick={(e) => handlerFilter(e)}
+                      className="mx-1 mt-3 buttons"
+                    />
+                  </Col>
+                ))}
+            </Row>
+            <Row
+              className={
+                message !== "" &&
+                "message d-flex justify-content-center align-items-center mt-2 p-2 mt-3"
+              }
+            >
+              {
+                <Col>
+                  <p className="my-0 text-center">{message}</p>
+                </Col>
+              }
+            </Row>
+            <Row className="mt-3">
+              {filter.map((p) => (
+                <Producto key={p.id} {...p} />
+              ))}
+            </Row>
+          </>
         )}
       </Container>
     </motion.div>
