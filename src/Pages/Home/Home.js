@@ -30,7 +30,7 @@ const Home = () => {
         <div className="d-flex ">
           <img
             className=" w-100 img-responsive image "
-            src="https://img.freepik.com/free-vector/many-cute-animals-bamboo-forest_1308-32851.jpg?w=2000"
+            src={require("./../../img/animals.jpg")}
             alt="First slide"
             style={{ height: "48rem" }}
             fluid
