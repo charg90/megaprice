@@ -7,10 +7,24 @@
   font-family: "Permanent Marker", "Courier New", Courier, monospace;
 }
 
-.buttons {
-  background-color: #003d8f;
+.btn-infantil {
+  background-color: #ff6b6b;
 }
 
+.btn-didactos {
+  background-color: #ffd93d;
+}
+
+.btn-playa {
+  background-color: #3ec70b;
+}
+
+.btn-bañadera {
+  background-color: #4d96ff;
+}
+.btn-little {
+  background-color: #e83a14;
+}
 .message {
   background-color: #003d8f;
   font-family: "Arial", Tahoma, Geneva, Verdana, sans-serif;

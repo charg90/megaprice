@@ -52,7 +52,7 @@ const Productos = () => {
             <Row>
               <Col>
                 <p className="text-center message p-2 mt-3">
-                  El juego es una parte fundamental de la vida de los bebes,
+                  El juego es una parte fundamental en la vida de los bebes,
                   niñas y niños ya que,gracias a el, mejoran su capacidad de
                   aprendizaje motivados por su curiosidad, como asi tambien
                   tiene la capacidad de reunir a los adultos y al niños/niñas en
@@ -70,7 +70,7 @@ const Productos = () => {
                       type="button"
                       value={button.value}
                       onClick={(e) => handlerFilter(e)}
-                      className="mx-1 mt-3 buttons"
+                      className={button.styles}
                     />
                   </Col>
                 ))}
