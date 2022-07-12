@@ -8,25 +8,78 @@
 }
 
 .btn-infantil {
-  background-color: #ff6b6b;
+  background-color: #ff007c;
+  border-color: #ff007c;
+  outline-style: none;
+}
+.btn-infantil:hover {
+  -webkit-box-shadow: 0px 0px 87px 16px rgba(255, 0, 123, 1);
+  -moz-box-shadow: 0px 0px 87px 16px rgba(255, 0, 123, 1);
+  box-shadow: 0px 0px 87px 16px rgba(255, 0, 123, 1);
+  background-color: #ff007c;
+  border-color: #ff6b6b;
+  outline-style: none;
+}
+.btn-infantil:active {
 }
 
 .btn-didactos {
   background-color: #ffd93d;
+  border-color: #ffd93d;
+  outline-style: none;
+}
+.btn-didactos:hover {
+  -webkit-box-shadow: 0px 0px 87px 16px rgba(255, 216, 61, 1);
+  -moz-box-shadow: 0px 0px 87px 16px rgba(255, 216, 61, 1);
+  box-shadow: 0px 0px 87px 16px rgba(255, 216, 61, 1);
+  background-color: #ffd93d;
+  border-color: #ffd93d;
+  outline-style: none;
 }
 
 .btn-playa {
   background-color: #3ec70b;
+  border-color: #3ec70b;
+  outline-style: none;
+}
+.btn-playa:hover {
+  -webkit-box-shadow: 0px 0px 87px 16px rgba(61, 199, 11, 1);
+  -moz-box-shadow: 0px 0px 87px 16px rgba(61, 199, 11, 1);
+  box-shadow: 0px 0px 87px 16px rgba(61, 199, 11, 1);
+  background-color: #3ec70b;
+  border-color: #3ec70b;
+  outline-style: none;
 }
 
 .btn-bañadera {
-  background-color: #4d96ff;
+  background-color: #0067ff;
+  border-color: #0067ff;
+  outline-style: none;
 }
+.btn-bañadera:hover {
+  -webkit-box-shadow: 0px 0px 87px 16px rgba(0, 102, 255, 1);
+  -moz-box-shadow: 0px 0px 87px 16px rgba(0, 102, 255, 1);
+  box-shadow: 0px 0px 87px 16px rgba(0, 102, 255, 1);
+  background-color: #0067ff;
+  border-color: #0067ff;
+  outline-style: none;
+}
+
 .btn-little {
   background-color: #e83a14;
+  border-color: #e83a14;
+  outline-style: none;
+}
+.btn-little:hover {
+  -webkit-box-shadow: 0px 0px 35px 8px rgba(232, 59, 20, 1);
+  -moz-box-shadow: 0px 0px 35px 8px rgba(232, 59, 20, 1);
+  box-shadow: 0px 0px 35px 8px rgba(232, 59, 20, 1);
+  background-color: #e83a14;
+  border-color: #e83a14;
+  outline-style: none;
 }
 .message {
-  background-color: #003d8f;
+  background-color: #3330e4;
   font-family: "Arial", Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 6px;
   color: aliceblue;
