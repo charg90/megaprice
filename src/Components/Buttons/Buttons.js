@@ -35,7 +35,7 @@ export const buttons = [
     id: 5,
     value: "playa",
     description:
-      "Juguetes para jugar al aire libre, en el arenero o en la playa. A los niños/niñas les fascinan porque les encanta experimentar con los jueguetes en el agua y en la arena.Estos elementos que estimulan los sentidos, fomentan el crecimiento y el desarrollo y ayudan a la coordinacion motora",
+      "Juguetes para jugar al aire libre, en el arenero o en la playa. A los niños/niñas  les encanta experimentar con los jueguetes en el agua y en la arena.Estos elementos  estimulan los sentidos, fomentan el crecimiento y el desarrollo y ayudan a la coordinacion motora",
     state: false,
     styles: "mx-1 mt-3 btn-playa",
   },
