@@ -11,11 +11,14 @@
   background-color: #ff007c;
   border-color: #ff007c;
   outline-style: none;
+  box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
 }
 .btn-infantil:hover {
-  -webkit-box-shadow: 0px 0px 87px 16px rgba(255, 0, 123, 1);
-  -moz-box-shadow: 0px 0px 87px 16px rgba(255, 0, 123, 1);
-  box-shadow: 0px 0px 87px 16px rgba(255, 0, 123, 1);
+  -webkit-box-shadow: 0px 0px 35px 8px rgba(255, 0, 123, 1);
+  -moz-box-shadow: 0px 0px 35px 8px rgba(255, 0, 123, 1);
+  box-shadow: 0px 0px 35px 8px rgba(255, 0, 123, 1);
   background-color: #ff007c;
   border-color: #ff6b6b;
   outline-style: none;
@@ -24,48 +27,61 @@
 }
 
 .btn-didactos {
+  box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
   background-color: #ffd93d;
   border-color: #ffd93d;
   outline-style: none;
 }
 .btn-didactos:hover {
-  -webkit-box-shadow: 0px 0px 87px 16px rgba(255, 216, 61, 1);
-  -moz-box-shadow: 0px 0px 87px 16px rgba(255, 216, 61, 1);
-  box-shadow: 0px 0px 87px 16px rgba(255, 216, 61, 1);
+  -webkit-box-shadow: 0px 0px 35px 8px rgba(255, 216, 61, 1);
+  -moz-box-shadow: 0px 0px 35px 8px rgba(255, 216, 61, 1);
+  box-shadow: 0px 0px 35px 8px rgba(255, 216, 61, 1);
   background-color: #ffd93d;
   border-color: #ffd93d;
   outline-style: none;
 }
 
 .btn-playa {
+  box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+
   background-color: #3ec70b;
   border-color: #3ec70b;
   outline-style: none;
 }
 .btn-playa:hover {
-  -webkit-box-shadow: 0px 0px 87px 16px rgba(61, 199, 11, 1);
-  -moz-box-shadow: 0px 0px 87px 16px rgba(61, 199, 11, 1);
-  box-shadow: 0px 0px 87px 16px rgba(61, 199, 11, 1);
+  -webkit-box-shadow: 0px 0px 35px 8px rgba(61, 199, 11, 1);
+  -moz-box-shadow: 0px 0px 35px 8px rgba(61, 199, 11, 1);
+  box-shadow: 0px 0px 35px 8px rgba(61, 199, 11, 1);
   background-color: #3ec70b;
   border-color: #3ec70b;
   outline-style: none;
 }
 
 .btn-bañadera {
+  box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
   background-color: #0067ff;
   border-color: #0067ff;
   outline-style: none;
 }
 .btn-bañadera:hover {
-  -webkit-box-shadow: 0px 0px 87px 16px rgba(0, 102, 255, 1);
-  -moz-box-shadow: 0px 0px 87px 16px rgba(0, 102, 255, 1);
-  box-shadow: 0px 0px 87px 16px rgba(0, 102, 255, 1);
+  -webkit-box-shadow: 0px 0px 35px 8px rgba(0, 102, 255, 1);
+  -moz-box-shadow: 0px 0px 35px 8px rgba(0, 102, 255, 1);
+  box-shadow: 0px 0px 35px 8px rgba(0, 102, 255, 1);
   background-color: #0067ff;
   border-color: #0067ff;
   outline-style: none;
 }
 
 .btn-little {
+  box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
   background-color: #e83a14;
   border-color: #e83a14;
   outline-style: none;
@@ -76,11 +92,22 @@
   box-shadow: 0px 0px 35px 8px rgba(232, 59, 20, 1);
   background-color: #e83a14;
   border-color: #e83a14;
-  outline-style: none;
+  outline-style: non8;
 }
 .message {
   background-color: #3330e4;
   font-family: "Permanent Marker", "Courier New", Courier, monospace;
   border-radius: 6px;
   color: aliceblue;
+  box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
+}
+
+.cards1 {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.card1:hover {
+  transform: scale(1.1);
 }

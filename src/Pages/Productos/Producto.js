@@ -15,7 +15,7 @@ const Producto = ({ codigo, nombre, img, imgDescription }) => {
         sm={6}
         md={4}
         lg={3}
-        className="mt-2 mb-2 d-flex justify-content-center"
+        className="mt-2 mb-2 d-flex justify-content-center card1"
       >
         <Card style={{ width: "14rem" }} className="h-100 producto-background ">
           <Card.Img variant="top" src={img} />
