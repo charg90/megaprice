@@ -17,7 +17,7 @@ const NavBar = () => {
             src={Logo}
             alt="no se encontro"
             fluid
-            style={{ width: "8rem" }}
+            style={{ width: "15rem" }}
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

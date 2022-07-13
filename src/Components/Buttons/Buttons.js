@@ -3,15 +3,15 @@ export const buttons = [
     id: 1,
     value: "infantil",
     description:
-      "Esta linea contiene diversos modelos de juguetes que tiene por objetivo la recreacion, el desarrollo y la estimulacion de los aspectos sensorio-motriz,intelectual y de convivencia social",
+      "Esta linea contiene diversos modelos de juguetes que tienen por objetivo la recreacion, el desarrollo y la estimulacion de los aspectos sensorio-motriz,intelectual y de convivencia social",
     state: false,
-    styles: "mx-1 mt-3  btn-infantil ",
+    styles: "mx-1 mt-3  btn-infantil  ",
   },
   {
     id: 2,
     value: "didácticos",
     description:
-      "Desarrollan sus habilidades sociales, sensoriales, la motriz fina, la memoria,la imaginacion y la creatividad.Tambien mejor su capacidad de concentracion y atencion, su autoestima y autoconfianza.",
+      "Desarrollan sus habilidades sociales, sensoriales, la motriz fina, la memoria,la imaginacion y la creatividad.Tambien mejora su capacidad de concentracion y atencion, su autoestima y autoconfianza.",
     state: false,
     styles: "mx-1 mt-3 btn-didactos ",
   },
@@ -19,7 +19,7 @@ export const buttons = [
     id: 3,
     value: "little",
     description:
-      "Diversos modelos de autos, aviones, trenes en tamaño reducido y en colores para jugar y coleccionar",
+      "Diversos modelos de autos, aviones, trenes en tamaño reducido y en diversos colores para jugar y coleccionar",
     state: false,
     styles: "mx-1 mt-3 btn-little ",
   },
@@ -27,7 +27,7 @@ export const buttons = [
     id: 4,
     value: "bañadera",
     description:
-      "Para que bañarse sea mucha mas divertido. A traves del baño logran asociar ese rato de higiene con el juego y el entretenimiento",
+      "Para que bañarse sea mucho mas divertido. A traves del baño logran asociar ese rato de higiene con el juego y el entretenimiento",
     state: false,
     styles: "mx-1 mt-3 btn-bañadera ",
   },

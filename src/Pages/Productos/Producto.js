@@ -20,10 +20,10 @@ const Producto = ({ codigo, nombre, img, imgDescription }) => {
         <Card style={{ width: "14rem" }} className="h-100 producto-background ">
           <Card.Img variant="top" src={img} />
           <Card.Body className="d-flex flex-column">
-            <Card.Title className="flex-grow-1 text-center text">
+            <Card.Title className="flex-grow-1 text-center text text-wrap">
               {nombre.toUpperCase()}
             </Card.Title>
-            <Card.Title className="mt-auto text flex-grow-1 text-center ">
+            <Card.Title className="mt-auto text flex-grow-1 text-center text-wrap">
               Codigo:{codigo}
             </Card.Title>
             <Button

@@ -78,12 +78,12 @@ const Productos = () => {
             <Row
               className={
                 message !== "" &&
-                "message d-flex justify-content-center align-items-center mt-2 p-2 mt-3"
+                "message d-flex justify-content-center align-items-center  p-2 mt-3"
               }
             >
               {
                 <Col>
-                  <p className="my-0 text-center">{message}</p>
+                  <p className="my-0 text-center message ">{message}</p>
                 </Col>
               }
             </Row>

@@ -1,5 +1,9 @@
 .form_contact {
-  background-color: #003d8f;
+  background-image: url("./../../img/pattern3.png");
+
   border-radius: 6px;
   color: aliceblue;
+}
+.h1 {
+  font-family: "Poppins", sans-serif !important;
 }

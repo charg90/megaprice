@@ -28,13 +28,13 @@ const Home = () => {
         className=" p-0    justify-content-center align-items-center   "
       >
         <div className="d-flex ">
-          <img
+          {/* <img
             className=" w-100 img-responsive image "
             src={require("./../../img/animals.jpg")}
             alt="First slide"
             style={{ height: "48rem" }}
             fluid
-          />
+          /> */}
           <p className="  text-center text carousel-caption words home_text ">
             Megaprice le ofrece una amplia gama de productos innovadores en
             juguetes plásticos para la primera infancia, desarrollados bajo

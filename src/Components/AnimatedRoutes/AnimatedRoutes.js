@@ -1,7 +1,8 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-
+import { Suspense, lazy } from "react";
 import Productos from "../../Pages/Productos/Productos";
+import Spinners from "./../Spinners/Spinners";
 
 import Home from "./../../Pages/Home/Home";
 import Empresa from "./../../Pages/Empresa/Empresa";

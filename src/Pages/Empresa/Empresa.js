@@ -1,5 +1,6 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import Logo from "./../../img/logo-megaprice-removebg-preview.png";
+import { Col, Container, Image, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import "./empresa.css";
@@ -24,9 +25,14 @@ const Empresa = () => {
       </Helmet>
       <Container className="   my-5  ">
         <Row className=" p-3 jumbotron_container  ">
-          <Col sm={12}>
-            <h1 className="s text-white  ">MegaPrice</h1>
-            <p className="jumbotron_letters text-white ">
+          <Col sm={12} className="text-center">
+            <Image
+              src={Logo}
+              alt="no se encontro"
+              fluid
+              style={{ width: "25rem" }}
+            />
+            <p className="jumbotron_letters text-white mt-2 ">
               Somos una empresa de capitales argentinos que desde su origen se
               ha dedicado a la fabricación y comercialización de juguetes de
               plástico para la primera infancia, a partir de los 12 meses de

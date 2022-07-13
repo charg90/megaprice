@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import sendEmail from "../../Services/EmailJs";
 import { Helmet } from "react-helmet";
+import Spinners from "./../../Components/Spinners/Spinners";
 import "./contact.css";
+import { useDebounce } from "./../../CustomHooks/useDebounce";
 
 const Contact = () => {
+  const [wait] = useDebounce(true);
+
+  // const [wait, setWait] = useState(true);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     console.log(wait);
+  //     setWait(false);
+  //   }, "1000");
+  //   console.log(wait);
+  // }, []);
+
   return (
     <motion.div
       intial={{ width: 0 }}
@@ -24,88 +38,92 @@ const Contact = () => {
         />
       </Helmet>
       <Container>
-        <Row className=" d-flex justify-content-center mb-2 ">
-          <h1 className="  mt-3 text-center">
-            {" "}
-            Nos encanta estar en contacto con vos
-          </h1>
+        {wait ? (
+          <Spinners />
+        ) : (
+          <Row className=" d-flex justify-content-center mb-2 ">
+            <h1 className="  mt-3 text-center h1 ">
+              {" "}
+              Para estar siempre en contacto vos nos podes escribir aca
+            </h1>
 
-          <Col xs={12} md={6} lg={6} className=" mt-4 ">
-            <Form onSubmit={sendEmail} className="form_contact p-4 ">
-              <Form.Group>
-                <Form.Label> Nombre y Apellido</Form.Label>
+            <Col xs={12} md={6} lg={6} className=" mt-4 ">
+              <Form onSubmit={sendEmail} className="form_contact p-4 ">
+                <Form.Group>
+                  <Form.Label> Nombre y Apellido</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Nombre y Apellido"
+                    name="nombreApellido"
+                    autoFocus
+                    required
+                  />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label> Empresa:</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Empresa"
+                    name="empresa"
+                    required
+                  />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label> Email:</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="email"
+                    name="email"
+                    required
+                  />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label> Pais:</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Pais"
+                    name="pais"
+                    required
+                  />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label> Ciudad:</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Ciudad"
+                    name="ciudad"
+                    required
+                  />
+                </Form.Group>
+                <Form.Label> telefono/celular:</Form.Label>
                 <Form.Control
-                  type="text"
-                  placeholder="Nombre y Apellido"
-                  name="nombreApellido"
-                  autofocus
+                  type="number"
+                  placeholder="Telefono/Celular"
+                  name="tel"
                   required
                 />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label> Empresa:</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Empresa"
-                  name="empresa"
-                  required
-                />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label> Email:</Form.Label>
-                <Form.Control
-                  type="email"
-                  placeholder="email"
-                  name="email"
-                  required
-                />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label> Pais:</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Pais"
-                  name="pais"
-                  required
-                />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label> Ciudad:</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Ciudad"
-                  name="ciudad"
-                  required
-                />
-              </Form.Group>
-              <Form.Label> telefono/celular:</Form.Label>
-              <Form.Control
-                type="number"
-                placeholder="Telefono/Celular"
-                name="tel"
-                required
-              />
-              <Form.Group>
-                <Form.Label> Motivo:</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Motivo"
-                  name="motivo"
-                  required
-                />
-                <Form.Control
-                  as="textarea"
-                  rows={3}
-                  className="my-1"
-                  name="comment"
-                />
-              </Form.Group>
-              <Button type="submit" className="btn btn-block">
-                ENVIAR
-              </Button>
-            </Form>
-          </Col>
-        </Row>
+                <Form.Group>
+                  <Form.Label> Motivo:</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Motivo"
+                    name="motivo"
+                    required
+                  />
+                  <Form.Control
+                    as="textarea"
+                    rows={3}
+                    className="my-1"
+                    name="comment"
+                  />
+                </Form.Group>
+                <Button type="submit" className="btn btn-block">
+                  ENVIAR
+                </Button>
+              </Form>
+            </Col>
+          </Row>
+        )}
       </Container>
     </motion.div>
   );
