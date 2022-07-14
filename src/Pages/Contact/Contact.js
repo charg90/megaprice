@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import sendEmail from "../../Services/EmailJs";
@@ -9,16 +8,6 @@ import { useDebounce } from "./../../CustomHooks/useDebounce";
 
 const Contact = () => {
   const [wait] = useDebounce(true);
-
-  // const [wait, setWait] = useState(true);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     console.log(wait);
-  //     setWait(false);
-  //   }, "1000");
-  //   console.log(wait);
-  // }, []);
 
   return (
     <motion.div
@@ -48,7 +37,13 @@ const Contact = () => {
             </h1>
 
             <Col xs={12} md={6} lg={6} className=" mt-4 ">
-              <Form onSubmit={sendEmail} className="form_contact p-4 ">
+              <motion.Form
+                onSubmit={sendEmail}
+                className="form_contact p-4 "
+                initial={{ x: "-300vh" }}
+                animate={{ x: 0 }}
+                transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+              >
                 <Form.Group>
                   <Form.Label> Nombre y Apellido</Form.Label>
                   <Form.Control
@@ -120,7 +115,7 @@ const Contact = () => {
                 <Button type="submit" className="btn btn-block">
                   ENVIAR
                 </Button>
-              </Form>
+              </motion.Form>
             </Col>
           </Row>
         )}

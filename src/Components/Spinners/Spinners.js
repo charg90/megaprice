@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Col, Row } from "react-bootstrap";
-
+import "./spinners.css";
 import PacmanLoader from "react-spinners/PacmanLoader";
 
 const Spinners = () => {
@@ -9,7 +9,7 @@ const Spinners = () => {
 
   return (
     <Row>
-      <Col className="d-flex justify-content-center mt-5 align-items-center">
+      <Col className="d-flex justify-content-center mt-5 align-items-center center-screen">
         <PacmanLoader color={color} loading={loading} size={50} />
       </Col>
     </Row>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button, Card, Col, Image, Modal } from "react-bootstrap";
-
+import { motion } from "framer-motion";
 import "./producto.css";
 
 const Producto = ({ codigo, nombre, img, imgDescription }) => {
@@ -15,9 +15,15 @@ const Producto = ({ codigo, nombre, img, imgDescription }) => {
         sm={6}
         md={4}
         lg={3}
-        className="mt-2 mb-2 d-flex justify-content-center card1"
+        className="mt-2 mb-2  d-flex justify-content-center card1"
       >
-        <Card style={{ width: "14rem" }} className="h-100 producto-background ">
+        <motion.Card
+          style={{ width: "14rem" }}
+          className="h-100 producto-background "
+          initial={{ x: "-300vh" }}
+          animate={{ x: 0 }}
+          transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
+        >
           <Card.Img variant="top" src={img} />
           <Card.Body className="d-flex flex-column">
             <Card.Title className="flex-grow-1 text-center text text-wrap">
@@ -36,7 +42,7 @@ const Producto = ({ codigo, nombre, img, imgDescription }) => {
               Ver mas
             </Button>
           </Card.Body>
-        </Card>
+        </motion.Card>
       </Col>
 
       <Modal

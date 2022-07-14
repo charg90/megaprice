@@ -1,4 +1,4 @@
-import Logo from "./../../img/logo-megaprice-removebg-preview.png";
+import Logo from "./../../img/megaprice-logo-3d.png";
 import { Container, Navbar, Nav, Image } from "react-bootstrap";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
