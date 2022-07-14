@@ -55,8 +55,8 @@ const Productos = () => {
                   El juego es una parte fundamental en la vida de los bebes,
                   niñas y niños ya que,gracias a el, mejoran su capacidad de
                   aprendizaje motivados por su curiosidad, como asi tambien
-                  tiene la capacidad de reunir a los adultos y al niños/niñas en
-                  interacciones divertidas y llenas de amor.{" "}
+                  tiene la capacidad de reunir a los adultos y los niños/niñas
+                  en interacciones divertidas y llenas de amor.{" "}
                 </p>
               </Col>
             </Row>
