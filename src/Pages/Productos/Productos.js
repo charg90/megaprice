@@ -83,7 +83,7 @@ const Productos = () => {
             >
               {
                 <Col>
-                  <p className="my-0 text-center message ">{message}</p>
+                  <p className="my-0 text-center  ">{message}</p>
                 </Col>
               }
             </Row>
