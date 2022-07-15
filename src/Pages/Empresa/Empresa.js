@@ -34,7 +34,7 @@ const Empresa = () => {
           <Row className=" p-3  ">
             <motion.Col
               sm={12}
-              className="text-center jumbotron_container "
+              className=" jumbotron_container p-4"
               initial={{ x: "-300vh" }}
               animate={{ x: 0 }}
               transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}

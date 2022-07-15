@@ -5,10 +5,8 @@ export const useDebounce = (state) => {
 
   useEffect(() => {
     setTimeout(() => {
-      console.log(loading);
       setLoading(false);
     }, "1000");
-    console.log(loading);
   }, []);
   return [loading];
 };

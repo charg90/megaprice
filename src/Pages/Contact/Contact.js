@@ -37,7 +37,7 @@ const Contact = () => {
             </h1>
 
             <Col xs={12} md={6} lg={6} className=" mt-4 ">
-              <motion.Form
+              <motion.form
                 onSubmit={sendEmail}
                 className="form_contact p-4 "
                 initial={{ x: "-300vh" }}
@@ -115,7 +115,7 @@ const Contact = () => {
                 <Button type="submit" className="btn btn-block">
                   ENVIAR
                 </Button>
-              </motion.Form>
+              </motion.form>
             </Col>
           </Row>
         )}

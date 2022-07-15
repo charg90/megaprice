@@ -69,7 +69,7 @@ const Productos = () => {
                       as="input"
                       type="button"
                       value={button.value}
-                      onClick={(e) => handlerFilter(e)}
+                      onClick={(e) => handlerFilter()}
                       className={button.styles}
                     />
                   </Col>
