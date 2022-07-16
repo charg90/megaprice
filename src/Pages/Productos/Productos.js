@@ -18,6 +18,7 @@ const Productos = () => {
     const categoria = e.target.value;
     const productsFilter = products.filter((p) => p.categoria === categoria);
     const [infoFilter] = info.filter((e) => e.value === categoria);
+    console.log("hola");
     setFilter(productsFilter);
     setMessage(infoFilter.description);
   };
@@ -69,7 +70,7 @@ const Productos = () => {
                       as="input"
                       type="button"
                       value={button.value}
-                      onClick={(e) => handlerFilter()}
+                      onClick={(e) => handlerFilter(e)}
                       className={button.styles}
                     />
                   </Col>
