@@ -26,11 +26,11 @@ const Contact = () => {
           content="juguetes, juguetes de plástico, autos plásticos, primera infancia, juguetes pequeños, juguetes para encastrar, duraderos, seguros, playa, infantil, didáctico, little, nenes, nenas, bañera, playa."
         />
       </Helmet>
-      <Container>
+      <Container className=" ">
         {wait ? (
           <Spinners />
         ) : (
-          <Row className=" d-flex justify-content-center mb-2 ">
+          <Row className=" d-flex justify-content-center align-items-center ">
             <h1 className="  mt-3 text-center h1 ">
               {" "}
               Para estar siempre en contacto vos nos podes escribir aca
