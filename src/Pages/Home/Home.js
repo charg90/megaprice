@@ -25,18 +25,11 @@ const Home = () => {
 
       <Container
         fluid
-        className=" p-0    justify-content-center align-items-center   "
+        className=" p-0 vh-100  d-flex  align-items-center background1   "
       >
-        <Row>
-          <Col>
-            <img
-              className=" w-100 img-responsive img-fluid image"
-              src={require("./../../img/36596.jpg")}
-              alt="First slide"
-              // style={{ height: "48rem" }}
-              fluid
-            />
-            <p className="  text-center text carousel-caption words home_text ">
+        <Row className="p-0 m-0 d-flex justify-content-center">
+          <Col sm={8}>
+            <p className="text-center home_text">
               Megaprice le ofrece una amplia gama de productos innovadores en
               juguetes plásticos para la primera infancia, desarrollados bajo
               estrictos estándares de calidad y seguridad. Entre la gran

@@ -14,15 +14,13 @@
 }
 .image {
   width: 100%;
-  background-size: 100% 100%;
-
+  object-fit: cover;
   filter: blur(0.2px) hue-rotate(5deg) opacity(1) saturate(1.3) sepia(0.4)
     contrast(0.9) brightness(0.5);
 }
 .home_text {
-  top: 55%;
-  transform: translateY(-50%);
-  color: #ffdc00;
+  color: black;
+  font-size: 1.5rem;
 }
 /* xs < 768 */
 
@@ -30,4 +28,10 @@
   .image {
     height: 53.5rem;
   }
+}
+
+.background1 {
+  background-image: url("./../../img/36596.jpg");
+  background-position: center center;
+  background-size: cover;
 }
