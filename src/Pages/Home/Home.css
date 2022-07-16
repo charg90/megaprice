@@ -13,6 +13,9 @@
   font-family: "Permanent Marker", "Courier New", Courier, monospace;
 }
 .image {
+  width: 100%;
+  background-size: 100% 100%;
+  min-height: 46rem;
   filter: blur(0.2px) hue-rotate(5deg) opacity(1) saturate(1.3) sepia(0.4)
     contrast(0.9) brightness(0.5);
 }
@@ -21,9 +24,10 @@
   transform: translateY(-50%);
   color: #ffdc00;
 }
-/* .image {
-  background-image: url("https://img.freepik.com/free-vector/many-cute-animals-bamboo-forest_1308-32851.jpg?w=2000");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+/* xs < 768 */
+
+@media screen and (min-width: 768px) {
+  .image {
+    height: 53.5rem;
+  }
+}
