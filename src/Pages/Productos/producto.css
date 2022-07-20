@@ -152,6 +152,7 @@
 
 .text {
   font-family: "Permanent Marker", "Courier New", Courier, monospace;
+  color: white !important;
 }
 
 /* xs < 768 */

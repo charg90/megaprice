@@ -31,12 +31,12 @@ const Contact = () => {
           <Spinners />
         ) : (
           <Row className=" d-flex justify-content-center align-items-center ">
-            <h1 className="  mt-3 text-center h1 ">
+            <h1 className="  mt-2 text-center h1 ">
               {" "}
               Para estar siempre en contacto vos nos podes escribir aca
             </h1>
 
-            <Col xs={12} md={6} lg={6} className=" mt-4 ">
+            <Col xs={12} md={6} lg={6} className=" mt-2 mb-2 ">
               <motion.form
                 onSubmit={sendEmail}
                 className="form_contact p-4 "
