@@ -26,7 +26,7 @@ const Home = () => {
       <Container fluid className=" p-0 d-flex">
         <Row className="p-0  d-flex justify-content-center ">
           <Col sm={4}>
-            <p className=" mt-5 text-center text home_text">
+            <p className=" mt-5 text-center  home_text">
               Megaprice le ofrece una amplia gama de productos innovadores en
               juguetes plásticos para la primera infancia, desarrollados bajo
               estrictos estándares de calidad y seguridad. Entre la gran
