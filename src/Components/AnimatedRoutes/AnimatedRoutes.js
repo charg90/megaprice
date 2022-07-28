@@ -8,7 +8,7 @@ import Contact from "./../../Pages/Contact/Contact";
 const AnimatedRoutes = () => {
   const location = useLocation();
   return (
-    <AnimatePresence>
+    <AnimatePresence className="min-vh-100 background d-flex flex-column">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="empresa" element={<Empresa />} />

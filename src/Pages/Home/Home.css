@@ -4,28 +4,48 @@
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
-.container__letters {
-  font-size: 1.5rem;
-}
 
 .text {
   color: #003d8f;
   font-family: "Permanent Marker", "Courier New", Courier, monospace;
 }
-.image {
-  width: 100%;
-  object-fit: cover;
-  filter: blur(0.2px) hue-rotate(5deg) opacity(1) saturate(1.3) sepia(0.4)
-    contrast(0.9) brightness(0.5);
-}
-.home_text {
-  color: black;
-  font-size: 1.5rem;
-}
-/* xs < 768 */
 
-/* @media screen and (min-width: 768px) {
-  .image {
-    height: 53.5rem;
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+  .home_text {
+    font-size: 1.3rem;
   }
-} */
+  .margin {
+    margin-top: 10rem;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+  .home_text {
+    font-size: 1.5rem;
+  }
+  .margin {
+    margin-top: 10rem;
+  }
+}
+
+/* md */
+@media screen and (min-width: 941px) {
+  .home_text {
+    font-size: 1.5rem;
+  }
+  .margin {
+    margin-top: 12rem;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+  .home_text {
+    font-size: 1.6rem;
+  }
+  .margin {
+    margin-top: 15.6rem;
+  }
+}

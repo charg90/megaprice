@@ -1,3 +1,7 @@
 .footer {
   background-image: url("./../../img/pattern3.png");
 }
+
+.footer_text {
+  font-size: 1.5rem;
+}

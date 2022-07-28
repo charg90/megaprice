@@ -23,20 +23,30 @@ const Home = () => {
         />
       </Helmet>
 
-      <Container fluid className=" p-0 d-flex">
-        <Row className="p-0  d-flex justify-content-center ">
-          <Col sm={4}>
-            <p className=" mt-5 text-center  home_text">
-              Megaprice le ofrece una amplia gama de productos innovadores en
+      <Container
+        fluid
+        className="d-flex flex-column  justify-content-center align-items-center margin  "
+      >
+        <Row className=" d-flex justify-content-center  ">
+          <Col sm={10} className="">
+            <p className=" text-center  home_text">
+              Megaprice les ofrece una amplia gama de productos innovadores en
               juguetes plásticos para la primera infancia, desarrollados bajo
-              estrictos estándares de calidad y seguridad. Entre la gran
-              variedad de juguetes ofrecemos distintos tipos de vehículos
-              plásticos, como autos, camiones, aviones, barcos, trenes, etc;
-              toda una línea de Juegos Didácticos pensados para el desarrollo y
-              motivación de los más pequeños. Año tras año, nuestras líneas de
-              juguetes son complementadas con nuevos modelos, manteniendo
-              siempre presente el factor económico del mercado y brindándoles a
-              nuestros clientes la mejor atención.
+              estrictos estándares de calidad y seguridad.
+            </p>
+            <p className="text-center  home_text">
+              Todos nuestros jueguetes están pensados para el desarrollo y la
+              motivación de las niñas/niños ya que el juguete es la principal
+              herramienta que les permite jugar y a través del juego desarrollar
+              sus habilidades mentales, estimular su aprendizaje, permitirles
+              experimentar y descubrir un mundo de conocimiento formas, colores,
+              texturas y tamaños , además de fomentar la creatividad y la
+              imaginación
+            </p>
+            <p className="text-center  home_text">
+              Por eso año tras año, nuestras lineas de juguetes son
+              complementadas con la incorporación de nuevos modelos, acompañando
+              siempre el crecimiento y desarrollo de nuestros niños/niñas
             </p>
           </Col>
         </Row>

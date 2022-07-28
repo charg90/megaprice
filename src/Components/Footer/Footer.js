@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./footer.css";
 const Footer = () => {
   return (
-    <Container fluid className="footer mt-auto ">
+    <Container fluid className="footer mt-auto">
       <Row>
         <Col
           xs={12}
@@ -12,7 +12,7 @@ const Footer = () => {
           xl={6}
           className="d-flex justify-content-center "
         >
-          <p className="text-white">
+          <p className="text-white footer_text">
             MegaPrice - Todos los derechos reservados
           </p>
         </Col>
@@ -23,8 +23,10 @@ const Footer = () => {
           xl={6}
           className="d-flex justify-content-center"
         >
-          <p className="text-white">Tel.: (5411) 4753-4105 </p>
-          <p className="text-white inline-block">/ lineas rotativas</p>
+          <p className="text-white footer_text">Tel.: (5411) 4753-4105 </p>
+          <p className="text-white inline-block footer_text">
+            / lineas rotativas
+          </p>
         </Col>
       </Row>
     </Container>
