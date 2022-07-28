@@ -23,10 +23,12 @@ const Footer = () => {
           xl={6}
           className="d-flex justify-content-center"
         >
-          <p className="text-white footer_text">Tel.: (5411) 4753-4105 </p>
-          <p className="text-white inline-block footer_text">
-            / lineas rotativas
+          <p className="text-white footer_text">
+            Tel.: (5411) 4753-4105 / lineas rotativas
           </p>
+          {/* <p className="text-white inline-block footer_text">
+            / lineas rotativas
+          </p> */}
         </Col>
       </Row>
     </Container>
