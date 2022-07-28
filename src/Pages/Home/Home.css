@@ -15,18 +15,12 @@
   .home_text {
     font-size: 1.3rem;
   }
-  .margin {
-    margin-top: 10rem;
-  }
 }
 
 /* sm */
 @media screen and (min-width: 768px) {
   .home_text {
     font-size: 1.5rem;
-  }
-  .margin {
-    margin-top: 10rem;
   }
 }
 
@@ -35,17 +29,11 @@
   .home_text {
     font-size: 1.5rem;
   }
-  .margin {
-    margin-top: 12rem;
-  }
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
   .home_text {
     font-size: 1.6rem;
-  }
-  .margin {
-    margin-top: 15.6rem;
   }
 }
