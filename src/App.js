@@ -5,9 +5,9 @@ import AnimatedRoutes from "./Components/AnimatedRoutes/AnimatedRoutes";
 
 function App() {
   return (
-    <Router>
+    <Router className="min-vh-100 background d-flex flex-column h-100">
       <NavBar />
-      <AnimatedRoutes />
+      <AnimatedRoutes className="min-vh-100 background d-flex flex-column h-100" />
       <Footer />
     </Router>
   );
