@@ -27,7 +27,7 @@ const Empresa = () => {
         />
       </Helmet>
 
-      <Container className="   my-5  ">
+      <Container className="   my-1  ">
         {wait ? (
           <Spinners />
         ) : (
@@ -43,7 +43,7 @@ const Empresa = () => {
                 src={Logo}
                 alt="no se encontro"
                 fluid
-                style={{ width: "25rem" }}
+                style={{ width: "20rem" }}
               />
               <p className="jumbotron_letters text-white mt-2 ">
                 Somos una empresa de capitales argentinos que desde su origen se

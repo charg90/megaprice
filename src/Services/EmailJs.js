@@ -13,7 +13,14 @@ const sendEmail = (e) => {
   const comment = e.target.comment.value;
 
   if (
-    (nombre, email, empresa, pais, ciudad, telefono, motivo, comment === "")
+    nombre &&
+    email &&
+    empresa &&
+    pais &&
+    ciudad &&
+    telefono &&
+    motivo &&
+    comment === ""
   ) {
     Swal.fire({
       position: "top-end",

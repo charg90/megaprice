@@ -9,7 +9,7 @@ const Spinners = () => {
 
   return (
     <Row>
-      <Col className="d-flex justify-content-center mt-5 align-items-center center-screen">
+      <Col className="d-flex justify-content-center mt-5 align-items-center center-screen colorAnimation">
         <PacmanLoader color={color} loading={loading} size={50} />
       </Col>
     </Row>
