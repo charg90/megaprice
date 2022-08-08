@@ -4,13 +4,11 @@ import NavBar from "./Components/NavBar/NavBar";
 import AnimatedRoutes from "./Components/AnimatedRoutes/AnimatedRoutes";
 import ReactGA from "react-ga";
 import { useEffect } from "react";
-
-const TRACKING_ID = "UA-236982542-2";
-ReactGA.initialize(TRACKING_ID);
+ReactGA.initialize(process.env.REACT_GA_ID);
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize(TRACKING_ID);
+    ReactGA.initialize(process.env.REACT_GA_ID);
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
