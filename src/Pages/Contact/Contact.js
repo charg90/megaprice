@@ -1,13 +1,20 @@
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import ReactGA from "react-ga";
 import { motion } from "framer-motion";
 import sendEmail from "../../Services/EmailJs";
 import { Helmet } from "react-helmet";
 import Spinners from "./../../Components/Spinners/Spinners";
 import "./contact.css";
 import { useDebounce } from "./../../CustomHooks/useDebounce";
+import React from "react";
+import { useEffect } from "react";
 
 const Contact = () => {
   const [wait] = useDebounce(true);
+
+  useEffect(() => {
+    ReactGA.pageview("/contact");
+  });
 
   return (
     <motion.div
@@ -31,10 +38,12 @@ const Contact = () => {
           <Spinners />
         ) : (
           <Row className=" d-flex justify-content-center align-items-center ">
-            <h1 className="  mt-2 text-center h1 ">
-              {" "}
-              Para estar siempre en contacto vos nos podes escribir aca
-            </h1>
+            <Col xs={12}>
+              <h1 className="  mt-2 text-center h1 ">
+                {" "}
+                Para estar siempre en contacto vos nos podes escribir aca
+              </h1>
+            </Col>
 
             <Col xs={12} md={6} lg={6} className=" mt-2 mb-2 ">
               <motion.form
