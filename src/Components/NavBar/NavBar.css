@@ -11,3 +11,7 @@
   text-decoration: underline;
   text-decoration-color: aqua;
 }
+navbar-toggler {
+  color: black !important;
+  background-color: #ffffff !important;
+}

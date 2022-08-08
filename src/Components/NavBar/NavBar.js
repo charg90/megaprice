@@ -20,7 +20,7 @@ const NavBar = () => {
             style={{ width: "15rem" }}
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav " />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto  ">
             <Nav.Link>

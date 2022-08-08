@@ -8,7 +8,7 @@ ReactGA.initialize(process.env.REACT_GA_ID);
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize("UA-236982542-2");
+    ReactGA.initialize("G-KWKYCP5EKR");
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
