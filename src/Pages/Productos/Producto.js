@@ -1,12 +1,20 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button, Card, Col, Image, Modal } from "react-bootstrap";
 import { motion } from "framer-motion";
+import ReactGA from "react-ga";
 import "./producto.css";
 
 const Producto = ({ codigo, nombre, img, imgDescription }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+
+  const handleShow = () => {
+    setShow(true);
+    ReactGA.event({
+      category: `Producto UNidad`,
+      action: `${codigo} '==>'${nombre}`,
+    });
+  };
 
   return (
     <>
