@@ -9,7 +9,10 @@ const TRACKING_ID = "UA-236982542-2";
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
-  useEffect(() => ReactGA.initialize(TRACKING_ID));
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <Router className="min-vh-100 background d-flex flex-column h-100">
