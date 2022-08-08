@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ReactGA from "react-ga";
 import { useGetProducts } from "../../CustomHooks/Http";
 import { Container, Row, Button, Col } from "react-bootstrap";
 import { buttons } from "./../../Components/Buttons/Buttons";
@@ -14,7 +15,15 @@ const Productos = () => {
   const [info] = useState(buttons);
   const [message, setMessage] = useState("");
 
+  const GoogleAnlyticsButtons = (e) => {
+    ReactGA.event({
+      category: "Products Buttons",
+      action: `click ${e.target.value}`,
+    });
+  };
+
   const handlerFilter = (e) => {
+    GoogleAnlyticsButtons(e);
     const categoria = e.target.value;
     const productsFilter = products.filter((p) => p.categoria === categoria);
     const [infoFilter] = info.filter((e) => e.value === categoria);
