@@ -2,14 +2,18 @@ import { HashRouter as Router } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import NavBar from "./Components/NavBar/NavBar";
 import AnimatedRoutes from "./Components/AnimatedRoutes/AnimatedRoutes";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { useEffect } from "react";
 ReactGA.initialize(process.env.REACT_GA_ID);
 
 function App() {
   useEffect(() => {
     ReactGA.initialize("G-KWKYCP5EKR");
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+    });
+    ReactGA.send(window.location.pathname + window.location.search);
   }, []);
 
   return (

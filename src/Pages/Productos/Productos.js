@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { useGetProducts } from "../../CustomHooks/Http";
 import { Container, Row, Button, Col } from "react-bootstrap";
 import { buttons } from "./../../Components/Buttons/Buttons";
