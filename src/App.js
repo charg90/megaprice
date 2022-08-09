@@ -4,7 +4,6 @@ import NavBar from "./Components/NavBar/NavBar";
 import AnimatedRoutes from "./Components/AnimatedRoutes/AnimatedRoutes";
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
-ReactGA.initialize(process.env.REACT_GA_ID);
 
 function App() {
   useEffect(() => {
