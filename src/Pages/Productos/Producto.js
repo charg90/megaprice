@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Card, Col, Image, Modal } from "react-bootstrap";
 import { motion } from "framer-motion";
+
 import ReactGA from "react-ga4";
 import "./producto.css";
 
