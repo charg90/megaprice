@@ -12,7 +12,7 @@ const NavBar = () => {
       className="nav_background"
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand>
           <Image
             src={Logo}
             alt="no se encontro"

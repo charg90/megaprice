@@ -1,7 +1,7 @@
 import React from "react";
-import avion from "./../../img/IER_7467-01.jpeg";
-import tren from "./../../img/IER_7508.jpg";
-import cubo from "./../../img/IER_7521.jpg";
+import avion from "./../../img/avioncito.jpeg";
+import tren from "./../../img/trencito.jpg";
+import cubo from "./../../img/cubo.jpg";
 import "./Carousel.css";
 const Carousel = () => {
   return (
