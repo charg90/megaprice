@@ -13,27 +13,27 @@
 /* xs < 768 */
 @media screen and (max-width: 767px) {
   .home_text {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
 /* sm */
 @media screen and (min-width: 768px) {
   .home_text {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
 /* md */
 @media screen and (min-width: 941px) {
   .home_text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
   .home_text {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }

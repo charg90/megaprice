@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 
 import "./Home.css";
+import Carousel from "../../Components/Carousel/Carousel";
 const Home = () => {
   return (
     <motion.div
@@ -23,7 +24,8 @@ const Home = () => {
         />
       </Helmet>
 
-      <Container fluid className="mt-5">
+      <Carousel />
+      <Container fluid className="mt-1">
         <Row className=" d-flex justify-content-center   ">
           <Col sm={10} className="">
             <p className=" text-center  home_text">

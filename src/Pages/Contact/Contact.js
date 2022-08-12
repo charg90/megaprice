@@ -1,5 +1,5 @@
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { motion } from "framer-motion";
 import sendEmail from "../../Services/EmailJs";
 import { Helmet } from "react-helmet";
@@ -13,7 +13,7 @@ const Contact = () => {
   const [wait] = useDebounce(true);
 
   useEffect(() => {
-    ReactGA.pageview("/contact");
+    ReactGA.send("/contact");
   });
 
   return (
