@@ -27,7 +27,7 @@ const Empresa = () => {
         />
       </Helmet>
 
-      <Container className="   my-1  contenedor d-flex align-items-center ">
+      <Container className="   mt-5  contenedor d-flex align-items-center ">
         {wait ? (
           <Spinners />
         ) : (

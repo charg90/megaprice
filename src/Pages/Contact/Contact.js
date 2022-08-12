@@ -35,7 +35,7 @@ const Contact = () => {
           content="juguetes, juguetes de plástico, autos plásticos, primera infancia, juguetes pequeños, juguetes para encastrar, duraderos, seguros, playa, infantil, didáctico, little, nenes, nenas, bañera, playa."
         />
       </Helmet>
-      <Container className=" contenedorContact d-flex align-items-center">
+      <Container className=" contenedorContact d-flex align-items-center mt-3 ">
         {wait ? (
           <Spinners />
         ) : (
@@ -47,7 +47,7 @@ const Contact = () => {
               </h1>
             </Col>
 
-            <Col xs={12} md={6} lg={6} className=" mt-2 mb-2 ">
+            <Col xs={12} md={6} lg={6} className=" mt-5 mb-2 ">
               <motion.form
                 onSubmit={sendEmail}
                 className="form_contact p-4 "
