@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.ac030fca.css",
-    "main.js": "./static/js/main.c6f98947.js",
+    "main.css": "./static/css/main.c196b3b8.css",
+    "main.js": "./static/js/main.45475fa7.js",
     "static/media/megaprice-logo-3d.png": "./static/media/megaprice-logo-3d.77d2afddb39d160fb4f7.png",
+    "static/media/cubo.jpg": "./static/media/cubo.d55df0c63a9e65300977.jpg",
+    "static/media/trencito.jpg": "./static/media/trencito.88cfbbe66afc2bec77ea.jpg",
+    "static/media/avioncito.jpeg": "./static/media/avioncito.d6dc4311aebf55b7800a.jpeg",
     "static/media/pattern3.png": "./static/media/pattern3.6ca0156739c657dddd1c.png",
     "index.html": "./index.html",
-    "main.ac030fca.css.map": "./static/css/main.ac030fca.css.map",
-    "main.c6f98947.js.map": "./static/js/main.c6f98947.js.map"
+    "main.c196b3b8.css.map": "./static/css/main.c196b3b8.css.map",
+    "main.45475fa7.js.map": "./static/js/main.45475fa7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac030fca.css",
-    "static/js/main.c6f98947.js"
+    "static/css/main.c196b3b8.css",
+    "static/js/main.45475fa7.js"
   ]
 }

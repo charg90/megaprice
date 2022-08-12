@@ -7,14 +7,16 @@ import Spinners from "./../../Components/Spinners/Spinners";
 import "./contact.css";
 import { useDebounce } from "./../../CustomHooks/useDebounce";
 import React from "react";
-import { useEffect } from "react";
 
 const Contact = () => {
   const [wait] = useDebounce(true);
 
-  useEffect(() => {
-    ReactGA.send("/contact");
-  });
+  const googleAnalyticsHandler = () => {
+    ReactGA.event({
+      category: `Form`,
+      action: `Formulario enviado`,
+    });
+  };
 
   return (
     <motion.div
@@ -128,7 +130,11 @@ const Contact = () => {
                     name="comment"
                   />
                 </Form.Group>
-                <Button type="submit" className="btn btn-block">
+                <Button
+                  type="submit"
+                  className="btn btn-block"
+                  onClick={googleAnalyticsHandler}
+                >
                   ENVIAR
                 </Button>
               </motion.form>

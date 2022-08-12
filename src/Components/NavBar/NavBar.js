@@ -13,12 +13,14 @@ const NavBar = () => {
     >
       <Container>
         <Navbar.Brand>
-          <Image
-            src={Logo}
-            alt="no se encontro"
-            fluid
-            style={{ width: "15rem" }}
-          />
+          <Link to="/">
+            <Image
+              src={Logo}
+              alt="no se encontro"
+              fluid
+              style={{ width: "15rem" }}
+            />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav " />
         <Navbar.Collapse id="responsive-navbar-nav">
