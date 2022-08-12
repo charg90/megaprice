@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.b720a972.css",
-    "main.js": "./static/js/main.da69fca1.js",
+    "main.css": "./static/css/main.05aa059d.css",
+    "main.js": "./static/js/main.230d9b5c.js",
     "static/media/megaprice-logo-3d.png": "./static/media/megaprice-logo-3d.77d2afddb39d160fb4f7.png",
     "static/media/cubo.jpg": "./static/media/cubo.d55df0c63a9e65300977.jpg",
     "static/media/avioncito.jpg": "./static/media/avioncito.93a793bed61b30df391c.jpg",
     "static/media/pattern3.png": "./static/media/pattern3.6ca0156739c657dddd1c.png",
     "index.html": "./index.html",
-    "main.b720a972.css.map": "./static/css/main.b720a972.css.map",
-    "main.da69fca1.js.map": "./static/js/main.da69fca1.js.map"
+    "main.05aa059d.css.map": "./static/css/main.05aa059d.css.map",
+    "main.230d9b5c.js.map": "./static/js/main.230d9b5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b720a972.css",
-    "static/js/main.da69fca1.js"
+    "static/css/main.05aa059d.css",
+    "static/js/main.230d9b5c.js"
   ]
 }

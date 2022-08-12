@@ -33,7 +33,11 @@ const Producto = ({ codigo, nombre, img, imgDescription }) => {
           animate={{ x: 0 }}
           transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
         >
-          <Card.Img variant="top" src={img} />
+          <Card.Img
+            variant="top"
+            src={img}
+            alt="no se ha encontrado la imagen"
+          />
           <Card.Body className="d-flex flex-column">
             <Card.Title className="flex-grow-1 text-center text text-wrap">
               {nombre.toUpperCase()}
