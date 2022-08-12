@@ -33,7 +33,7 @@ const Contact = () => {
           content="juguetes, juguetes de plástico, autos plásticos, primera infancia, juguetes pequeños, juguetes para encastrar, duraderos, seguros, playa, infantil, didáctico, little, nenes, nenas, bañera, playa."
         />
       </Helmet>
-      <Container className=" ">
+      <Container className=" contenedorContact d-flex align-items-center">
         {wait ? (
           <Spinners />
         ) : (
@@ -54,65 +54,72 @@ const Contact = () => {
                 transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
               >
                 <Form.Group>
-                  <Form.Label> Nombre y Apellido</Form.Label>
+                  <Form.Label className="label"> Nombre y Apellido</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Nombre y Apellido"
                     name="nombreApellido"
                     autoFocus
                     required
+                    className="control"
                   />
                 </Form.Group>
                 <Form.Group>
-                  <Form.Label> Empresa:</Form.Label>
+                  <Form.Label className="label"> Empresa:</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Empresa"
                     name="empresa"
                     required
+                    className="control"
                   />
                 </Form.Group>
                 <Form.Group>
-                  <Form.Label> Email:</Form.Label>
+                  <Form.Label className="label"> Email:</Form.Label>
                   <Form.Control
                     type="email"
                     placeholder="email"
                     name="email"
                     required
+                    className="control"
                   />
                 </Form.Group>
                 <Form.Group>
-                  <Form.Label> Pais:</Form.Label>
+                  <Form.Label className="label"> Pais:</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Pais"
                     name="pais"
                     required
+                    className="control"
                   />
                 </Form.Group>
                 <Form.Group>
-                  <Form.Label> Ciudad:</Form.Label>
+                  <Form.Label className="label"> Ciudad:</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Ciudad"
                     name="ciudad"
                     required
+                    className="control"
                   />
                 </Form.Group>
-                <Form.Label> telefono/celular:</Form.Label>
+                <Form.Label className="label"> telefono/celular:</Form.Label>
                 <Form.Control
                   type="number"
                   placeholder="Telefono/Celular"
                   name="tel"
                   required
+                  className="control"
                 />
                 <Form.Group>
-                  <Form.Label> Motivo:</Form.Label>
+                  <Form.Label className="label"> Motivo:</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Motivo"
                     name="motivo"
                     required
+                    className="control"
                   />
                   <Form.Control
                     as="textarea"

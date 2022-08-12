@@ -27,7 +27,7 @@ const Empresa = () => {
         />
       </Helmet>
 
-      <Container className="   my-1  ">
+      <Container className="   my-1  contenedor d-flex align-items-center ">
         {wait ? (
           <Spinners />
         ) : (
@@ -74,21 +74,13 @@ const Empresa = () => {
                 capaces de resistir el uso que el niño/niña le dará, además de
                 no suponerle un peligro. Megaprice es una fábrica que se
                 encuentra comprometida plenamente con los requerimientos
-                establecidos en materia de seguridad. Nuestros juguetes cuentan
-                con un sistema europeo que no permite que las ruedas de los
-                vehículos se desprendan de su eje, logrando a su vez que dicho
-                eje permanezca brilloso evitando su opacamiento y oxidación. Los
-                mismos también son sometidos a rigurosos análisis y ensayos, los
-                cuales son realizados en el laboratorio de la Cámara Argentina
-                de la Industria del Juguete, obteniendo luego certificados de
-                conformidad emitidos por el INTI (Instituto Nacional de
-                Tecnología Industrial). Además de encontrarse todos los
-                productos certificados por las normas IRAM correspondientes
-                también se encuentran aprobados por la Resolución 583/2008 del
-                Ministerio de Salud, la cual certifica la no contención de
-                ftalato. Debido a la importancia que tienen los niños/niñas para
-                nuestra empresa, la seguridad de ellos/ellas siempre será un
-                objetivo primordial e ineludible para nosotros.
+                establecidos en materia de seguridad. Los mismos también son
+                sometidos a rigurosos análisis y ensayos, los cuales son
+                realizados en los laboratorios habilitados con tal fin, contando
+                de esta manera con los certificados habilitados
+                correspondientes. Debido a la importancia que tienen los
+                niños/niñas para nuestra empresa, la seguridad de ellos/ellas
+                siempre será un objetivo primordial e ineludible para nosotros.
               </p>
             </motion.Col>
           </Row>

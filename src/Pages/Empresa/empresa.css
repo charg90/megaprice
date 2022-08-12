@@ -4,6 +4,10 @@
 }
 
 .jumbotron_letters {
-  font-size: 16px;
+  font-size: 1.2rem;
   font-family: "Poppins", sans-serif !important;
+}
+
+.contenedor {
+  height: 80vh;
 }
