@@ -9,7 +9,7 @@
   box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
   -webkit-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 18px 17px 5px -9px rgba(0, 0, 0, 0.14);
-  font-size: 1.2em;
+  font-size: 1.7em;
 }
 .btn-infantil:hover {
   -webkit-box-shadow: 0px 0px 35px 8px rgba(255, 0, 123, 1);
@@ -18,6 +18,7 @@
   background-color: #ff007c;
   border-color: #ff6b6b;
   outline-style: none;
+  font-size: 1.7em;
 }
 .btn-infantil:focus {
   -webkit-box-shadow: 0px 0px 35px 8px rgba(255, 0, 123, 1);
@@ -26,6 +27,7 @@
   background-color: #ff007c;
   border-color: #ff6b6b;
   outline-style: none;
+  font-size: 1.7em;
 }
 
 .btn-didactos {
@@ -35,7 +37,7 @@
   background-color: #ffd93d;
   border-color: #ffd93d;
   outline-style: none;
-  font-size: 1.2em;
+  font-size: 1.7em;
 }
 .btn-didactos:hover {
   -webkit-box-shadow: 0px 0px 35px 8px rgba(255, 216, 61, 1);
@@ -44,6 +46,7 @@
   background-color: #ffd93d;
   border-color: #ffd93d;
   outline-style: none;
+  font-size: 1.7em;
 }
 .btn-didactos:focus {
   -webkit-box-shadow: 0px 0px 35px 8px rgba(255, 216, 61, 1);
@@ -52,6 +55,7 @@
   background-color: #ffd93d;
   border-color: #ffd93d;
   outline-style: none;
+  font-size: 1.7em;
 }
 
 .btn-playa {
@@ -62,7 +66,7 @@
   background-color: #3ec70b;
   border-color: #3ec70b;
   outline-style: none;
-  font-size: 1.2em;
+  font-size: 1.7em;
 }
 .btn-playa:hover {
   -webkit-box-shadow: 0px 0px 35px 8px rgba(61, 199, 11, 1);
@@ -71,6 +75,7 @@
   background-color: #3ec70b;
   border-color: #3ec70b;
   outline-style: none;
+  font-size: 1.7em;
 }
 .btn-playa:focus {
   -webkit-box-shadow: 0px 0px 35px 8px rgba(61, 199, 11, 1);
@@ -79,6 +84,7 @@
   background-color: #3ec70b;
   border-color: #3ec70b;
   outline-style: none;
+  font-size: 1.7em;
 }
 
 .btn-bañadera {
@@ -88,7 +94,7 @@
   background-color: #0067ff;
   border-color: #0067ff;
   outline-style: none;
-  font-size: 1.2em;
+  font-size: 1.7em;
 }
 .btn-bañadera:hover {
   -webkit-box-shadow: 0px 0px 35px 8px rgba(0, 102, 255, 1);
@@ -97,6 +103,7 @@
   background-color: #0067ff;
   border-color: #0067ff;
   outline-style: none;
+  font-size: 1.7em;
 }
 .btn-bañadera:focus {
   -webkit-box-shadow: 0px 0px 35px 8px rgba(0, 102, 255, 1);
@@ -105,6 +112,7 @@
   background-color: #0067ff;
   border-color: #0067ff;
   outline-style: none;
+  font-size: 1.7em;
 }
 
 .btn-little {
@@ -114,7 +122,7 @@
   background-color: #e83a14;
   border-color: #e83a14;
   outline-style: none;
-  font-size: 1.2em;
+  font-size: 1.7em;
 }
 .btn-little:hover {
   -webkit-box-shadow: 0px 0px 35px 8px rgba(232, 59, 20, 1);
@@ -123,6 +131,7 @@
   background-color: #e83a14;
   border-color: #e83a14;
   outline-style: none;
+  font-size: 1.7em;
 }
 .btn-little:focus {
   -webkit-box-shadow: 0px 0px 35px 8px rgba(232, 59, 20, 1);
@@ -131,8 +140,10 @@
   background-color: #e83a14;
   border-color: #e83a14;
   outline-style: none;
+  font-size: 1.7em;
 }
 .message {
+  font-size: 1.4em;
   background-color: #3330e4;
   font-family: "Poppins", sans-serif !important;
   border-radius: 6px;
@@ -154,11 +165,22 @@
   font-family: "Permanent Marker", "Courier New", Courier, monospace;
   color: white !important;
 }
+.btnInfo {
+  color: black;
+  background-color: #3ab4f2;
+  font-size: 1.6em;
+}
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
   .text {
-    font-size: 1em;
+    font-size: 1.3em;
+  }
+  .message {
+    font-size: 1.2em;
+  }
+  .btnInfo {
+    font-size: 1.4em;
   }
 }
 
@@ -167,12 +189,25 @@
   .text {
     font-size: 1.3em;
   }
+  .message {
+    font-size: 1.4em;
+  }
+  .btnInfo {
+    font-size: 1.5em;
+  }
 }
 
 /* md */
 @media screen and (min-width: 992px) {
   .text {
     font-size: 1.4em;
+  }
+
+  .message {
+    font-size: 1.4em;
+  }
+  .btnInfo {
+    font-size: 1.6em;
   }
 }
 

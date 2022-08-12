@@ -28,7 +28,7 @@ const Producto = ({ codigo, nombre, img, imgDescription }) => {
       >
         <motion.Card
           style={{ width: "14rem" }}
-          className="h-100 producto-background "
+          className="h-100 producto-background d-flex flex-column"
           initial={{ x: "-300vh" }}
           animate={{ x: 0 }}
           transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
@@ -43,7 +43,7 @@ const Producto = ({ codigo, nombre, img, imgDescription }) => {
             </Card.Title>
             <Button
               variant="primary"
-              className="mt-auto"
+              className="btn-block mt-auto btnInfo"
               onClick={() => {
                 handleShow();
               }}
