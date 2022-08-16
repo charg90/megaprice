@@ -1,6 +1,8 @@
 .photo {
   object-fit: fill;
-  height: 60vh;
+  height: 80vh;
+  object-fit: fill;
+  object-position: 15px, 30px;
 }
 
 .avion {
@@ -17,42 +19,3 @@
   font-size: 2.5rem;
   color: #0067ff;
 }
-
-/* sm */
-/* @media screen and (min-width: 768px) {
-  .avion {
-    font-size: 1.3em;
-  }
-  .cubo {
-    font-size: 1.3em;
-  }
-  .tren {
-    font-size: 1.3em;
-  }
-} */
-
-/* md */
-/* @media screen and (min-width: 992px) {
-  .avion {
-    font-size: 2rem;
-  }
-  .cubo {
-    font-size: 2rem;
-  }
-  .tren {
-    font-size: 2rem;
-  }
-} */
-
-/* lg */
-/* @media screen and (min-width: 1200px) {
-  .avion {
-    font-size: 2.5em;
-  }
-  .cubo {
-    font-size: 2.5em;
-  }
-  .tren {
-    font-size: 2.5em;
-  }
-} */
