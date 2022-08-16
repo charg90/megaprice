@@ -4,7 +4,13 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="nav_background">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      className="nav_background"
+      bg="transparent"
+      variant="dark"
+    >
       <Container>
         <Navbar.Brand>
           <Link to="/">
@@ -16,7 +22,7 @@ const NavBar = () => {
             />
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav " />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav " className="" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto  ">
             <Nav.Link>
